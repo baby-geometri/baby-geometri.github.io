@@ -1,0 +1,20 @@
+- url: "http://pianotriennale-ict.readthedocs.io/en/latest/"
+  title: "Link 1"
+  blank: true
+  divider: true
+- url: "https://developers.italia.it/en"
+  title: "Link 2"
+  blank: true
+- url: "https://designers.italia.it/"
+  title: "Designers"
+  blank: true
+  divider: true
+- url: "https://forum.italia.it/"
+  title: "Forum"
+  blank: true
+- url: "https://docs.developers.italia.it/"
+  title: "Docs"
+  blank: true
+- url: "https://github.com/italia/"
+  title: "GitHub"
+  blank: true

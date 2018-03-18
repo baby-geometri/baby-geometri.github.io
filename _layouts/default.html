@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  {% include head.html %}
+
+</head>
+
+<body id="page-top">
+
+{% include nav.html %}
+
+<header class="masthead text-center text-white d-flex">
+  <div class="container my-auto">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h1 class="text-uppercase">
+          <strong>{{ site.data.content.main.title }}</strong>
+        </h1>
+        {{ site.data.content.main.text }}
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <ul class="nav nav-fill justify-content-center">
+          {% for nav_item in site.data.nav-main %}
+          <li class="nav-item">
+            <a class="nav-link text-white js-scroll-trigger" href="{{ nav_item.url }}">{{ nav_item.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <hr>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#whitepaper">Find Out More</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="whitepaper">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">{{ site.data.content.whitepaper.title }}</h2>
+        <hr class="my-4">
+        <p>{{ site.data.content.whitepaper.text }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      {% for people in site.data.content.whitepaper.who-we-are %}
+      <div class="col-lg-4 col-md-4 text-center">
+        <div class="service-box mt-5 mx-auto">
+          <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
+          <h3 class="mb-3">{{ people.name }}</h3>
+          <p class="text-muted mb-0">{{ people.bio }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <a class="btn btn-primary btn-xl mt-5 js-scroll-trigger" href="./whitepaper">Vai al whitepaper</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-primary" id="evo">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">{{ site.data.content.versioning.title }}</h2>
+        <hr class="light my-4">
+        {{ site.data.content.versioning.text }}
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="participate">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">{{ site.data.content.participate.title }}</h2>
+        <hr class="my-4">
+        <ul>
+        {% for points in site.data.content.participate.collaboration-list %}
+          <li class="mb-4">{{ points.point }}</p>
+        {% endfor %}
+       </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 ml-auto text-center">
+        <p>{{ site.data.content.participate.phone }}</p>
+      </div>
+      <div class="col-lg-4 mr-auto text-center">
+        <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+        <p>
+          <a href="mailto:{{ site.data.content.participate.email }}">{{ site.data.content.participate.email }}</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include footer.html %}
+
+{% include scripts.html %}
+
+</body>
+</html>

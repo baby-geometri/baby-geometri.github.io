@@ -1,0 +1,39 @@
+main:
+  title: "Main text"
+  text: "<p class=\"text-faded mb-4\">This is some text</p>
+  <p class=\"text-faded mb-4\">Anche qui</p>"
+pagina:
+  title: "Pagina"
+  text: "Questo è del testo di esempio"
+  who-we-are:
+    - name: "Persona uno"
+      bio: "Chiarissimo professore"
+    - name: "Persona 2"
+      bio: "La mia bio"
+    - name: "Persona tre"
+      bio: "Emerito ..."
+evo:
+  title: "Come evolverà?"
+  text: "<p>
+    Lorem ipsum
+  </p>
+  <p>
+    Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Pellentesque habitant morbi tristique senectus et netus. Quam temere in vitiis, legem sancimus haerentia. Quis aute iure reprehenderit in voluptate velit esse. At nos hinc posthac, sitientis piros Afros.
+  </p>
+  <p>
+    Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Pellentesque habitant morbi tristique senectus et netus. Quam temere in vitiis, legem sancimus haerentia. Quis aute iure reprehenderit in voluptate velit esse. At nos hinc posthac, sitientis piros Afros.
+  </p>
+  <p>
+    Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Pellentesque habitant morbi tristique senectus et netus. Quam temere in vitiis, legem sancimus haerentia. Quis aute iure reprehenderit in voluptate velit esse. At nos hinc posthac, sitientis piros Afros.
+  </p>"
+participate:
+  title: "Partecipa!"
+  text: "Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Pellentesque habitant morbi tristique senectus et netus. Quam temere in vitiis, legem sancimus haerentia. Quis aute iure reprehenderit in voluptate velit esse. At nos hinc posthac, sitientis piros Afros."
+  collaboration-list:
+    - point: "Mandaci il tuo seminario"
+    - point: "Candidati come HUB locale sia come individuo che come organizzazione"
+    - point: "BLAH"
+  phone:  +00 000 000 000
+  email:  my@email.com
+footer:
+  text: "<p>I am the footer <a href=\"../../\">blah</a>.</p>"

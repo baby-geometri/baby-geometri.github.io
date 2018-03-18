@@ -1,0 +1,10 @@
+{
+  "name": "italia-hubs",
+  "scripts": {
+    "deploy": "gh-pages -d _site",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "gh-pages": "^1.1.0"
+  }
+}

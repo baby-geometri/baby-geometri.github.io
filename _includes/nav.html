@@ -1,0 +1,16 @@
+<nav id="topNav" class="navbar-institutional navbar navbar-expand-lg navbar-dark fixed-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+          aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Baby <span class="d-none d-lg-inline">Geometri </span></a>
+  <div class="collapse navbar-collapse" id="navbarsExample05">
+    <ul class="navbar-nav ml-auto">
+      {% for nav_item in site.data.nav-top %}
+      <li class="nav-item{% if nav_item.divider == true %} nav-item-w-divider{% endif %}">
+        <a class="nav-link"{% if nav_item.blank == true %} target="_blank"{% endif %} href="{{ nav_item.url }}">{{ nav_item.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>
