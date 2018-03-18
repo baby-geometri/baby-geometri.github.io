@@ -12,7 +12,7 @@ pagina:
       bio: "La mia bio"
     - name: "Persona tre"
       bio: "Emerito ..."
-evo:
+versioning:
   title: "Come evolverà?"
   text: "<p>
     prova qua!
