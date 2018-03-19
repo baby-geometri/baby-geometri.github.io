@@ -2,9 +2,13 @@ main:
   title: "Baby geometri"
   text: "<p class=\"text-faded mb-4\">Universita' degli Studi di Pisa - Scuola Normale Superiore</p>
   <p class=\"text-faded mb-4\">Anche qui</p>"
+
+
+
 pagina:
   title: "Pagina"
-  text: "Questo è del testo di esempio"
+  text: "<p>
+  Questo è del testo di esempio"
   who-we-are:
     - name: "Persona uno"
       bio: "Chiarissimo professore"
@@ -12,9 +16,14 @@ pagina:
       bio: "La mia bio"
     - name: "Persona tre"
       bio: "Emerito ..."
+      </p>
+      
+      
+      
+      
 versioning:
   title: "Come evolverà?"
-  text: "<p>
+  text: <p>
     prova quaaaaaa!
   </p>
 
