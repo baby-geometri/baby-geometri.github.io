@@ -98,6 +98,22 @@
   </div>
 </section>
 
+   <section id="pagina">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">{{ site.data.content.pagina.title }}</h2>
+        <hr class="my-4">
+        <ul>
+        {% for points in site.data.content.participate.collaboration-list %}
+          <li class="mb-4">{{ points.point }}</p>
+        {% endfor %}
+       </ul>
+      </div>
+    </div>
+  </div>
+   
+   
 <section id="participate">
   <div class="container">
     <div class="row">
