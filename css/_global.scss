@@ -9,7 +9,7 @@ html {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: $primary;
+  border-color: $warning;
 }
 
 hr.light {
@@ -17,16 +17,16 @@ hr.light {
 }
 
 a {
-  color: $primary;
+  color: $warning;
   @include transition-all;
   &:hover {
-    color: darken($primary, .1);
+    color: darken($warning, .1);
   }
 }
 
 
 .bg-warning {
-  background-color: $primary !important;
+  background-color: $warning !important;
 }
 
 .bg-dark {
