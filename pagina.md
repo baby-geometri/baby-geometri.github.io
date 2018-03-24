@@ -7,6 +7,10 @@ layout: page
 
 # Ciao, questa è una pagina
 prova prova
+ <ul> <li> ciaociao
+  </li>
+  </ul>
+
 
 <div class="card w-50">
   <img class="card-img-top" src="..." alt="Immagine testata Card">
