@@ -9,9 +9,7 @@ chisiamo:
   text: "<p>
   Questo è del testo di esempio"
   
-      
-      
-      
+
       
 archivio:
   title: "Archivio"
@@ -37,13 +35,9 @@ archivio:
 following:
   title: "A seguire"
   text: "Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Pellentesque habitant morbi tristique senectus et netus. Quam temere in vitiis, legem sancimus haerentia. Quis aute iure reprehenderit in voluptate velit esse. At nos hinc posthac, sitientis piros Afros."
-  collaboration-list:
-    - point: "Mandaci il tuo seminario"
-    - point: "Candidati come HUB locale sia come individuo che come organizzazione"
-    - point: "BLooooH"
-  phone:  +00 000 000 000
+  
 footer:
-  text: "<p>I am the footer <a href=\"../../\">blah</a>.</p>"
+  text: "<p>I am the footer <a href=\"../../\">bluuuh</a>.</p>"
   
 participate:
   title: "Partecipa!"
