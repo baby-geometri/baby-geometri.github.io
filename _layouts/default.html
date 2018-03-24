@@ -83,14 +83,16 @@
   </div>
 </section>
 
- <section class="bg-primary" id="chisiamo">
+ <section class="bg-primary"  text-white  id="chisiamo">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-heading">{{ site.data.content.chisiamo.title }}</h2>
         <hr class="my-4">
-        <ul>
+       <ul>
+        {% for points in site.data.content.chisiamo.people %}
           <li class="mb-4">{{ points.point }}</p>
+        {% endfor %}
        </ul>
       </div>
     </div>
