@@ -6,7 +6,7 @@ main:
 
 chisiamo:
   title: "Chi siamo"
-  text: "<p> I baby geometri sono un ciclo di seminari.... attualmente organizzato da </p>"
+  text: "<p> I baby geometri sono un ciclo di seminari.... attualmente organizzato da.. </p>"
   people:
     - point: "Giulio"
     - point: "Marco"
