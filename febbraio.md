@@ -2,7 +2,6 @@
 
 
 <ul>
-	
 	<li>  <big> NICOLETTA TARDINI (Università degli studi di Parma)  </big> 
 	<div id="testo"><a href="#" onclick="visualizza('comparsa'); return false">
 	<b> Kahler o non-Kahler, questo è il problema. </b></a></div>
