@@ -5,16 +5,10 @@ main:
 
 
 chisiamo:
-  title: "Chi siamo"
+  title: "chisiamo"
   text: "<p>
   Questo è del testo di esempio"
-  who-we-are:
-    - name: "Persona uno"
-      bio: "Chiarissimo professore"
-    - name: "Persona 2"
-      bio: "La mia bio"
-    - name: "Persona tre"
-      bio: "Emerito ..."
+  
       
       
       
