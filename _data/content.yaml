@@ -6,7 +6,7 @@ main:
 
 chisiamo:
   title: "Chi siamo"
-  text: "<p> Questo rrrrr del testo di esempio </p>"
+  text: "<p> I baby geometri sono un ciclo di seminari.... attualmente gli organizzatori sono: </p>"
   people:
     - point: "Giulio"
     - point: "Marco"
