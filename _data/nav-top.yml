@@ -1,14 +1,10 @@
-- url: "http://www.dm.unipi.it/webnew/"
-  title: "Dm.unipi"
+- url: "http://www.dm.unipi.it/webnew/it/dottorato/phd"
+  title: "PhD @ Unipi"
   blank: true
   divider: true
 - url: "http://phd.sns.it/it/matematica/"
-  title: "phd @ SNS"
+  title: "PhD @ SNS"
   blank: true
-- url: "https://designers.italia.it/"
-  title: "Designers"
-  blank: true
-  divider: true
 - url: "https://forum.italia.it/"
   title: "Forum"
   blank: true
