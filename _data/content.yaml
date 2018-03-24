@@ -3,6 +3,13 @@ main:
   text: "<p class=\"text-faded mb-4\">Università degli Studi di Pisa - Scuola Normale Superiore</p>
   <p class=\"text-faded mb-4\">Anche qui</p>"
 
+whitepaper:
+  title: "La norma di Thurston"
+  speaker: "Mario Rossi"
+  where: "Aula seminari (Dipartimento di Matematica)"
+  when: "Mercoledì 17/04/18 ore 16.30"
+  Abstract: "Questo è un abstract super interessante"
+
 
 chisiamo:
   title: "Chi siamo"
