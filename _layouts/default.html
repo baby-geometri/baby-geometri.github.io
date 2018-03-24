@@ -57,7 +57,7 @@
     <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading">{{ site.data.content.whitepaper.title }} blablabla </h2>
+        <h2 class="section-heading">{{ site.data.content.whitepaper.title }} Coming up </h2>
         <hr class="my-4">
         <p>{{ site.data.content.whitepaper.text }}questo testo1</p>
       </div>
@@ -83,26 +83,11 @@
   </div>
 </section>
 
-
-<section class="bg-primary" id="archivio">
-   
+ <section class="bg-primary" id="chisiamo">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading">{{ site.data.content.versioning.title }} Archivio</h2>
-        <hr class="light my-4">
-        {{ site.data.content.versioning.text }}
-
-      </div>
-    </div>
-  </div>
-</section>
-
-   <section id="chisiamo">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading">{{ site.data.content.pagina.title }}</h2>
+        <h2 class="section-heading">{{ site.data.content.pagina.title }} Chi siamo </h2>
         <hr class="my-4">
         <ul>
         {% for points in site.data.content.participate.collaboration-list %}
@@ -113,15 +98,28 @@
     </div>
   </div>
    
+<section id="archivio">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">{{ site.data.content.archivio.title }} Arrrrrchivio</h2>
+        <hr class="light my-4">
+        {{ site.data.content.archivio.text }}
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+   
    
    <section id="following">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading">{{ site.data.content.participate.title }}</h2>
+        <h2 class="section-heading">{{ site.data.content.following.title }} Following </h2>
         <hr class="my-4">
         <ul>
-        {% for points in site.data.content.participate.collaboration-list %}
           <li class="mb-4">{{ points.point }}</p>
         {% endfor %}
        </ul>
@@ -131,7 +129,6 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-4 ml-auto text-center">
-        <p>{{ site.data.content.participate.phone }}</p>
       </div>
       <div class="col-lg-4 mr-auto text-center">
         <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
