@@ -1,9 +1,9 @@
-- url: "#chisiamo"
-  title: "Chi siamo"
-- url: "#archivio"
-  title: "Archivio"
 - url: "#following"
   title: "Following"
+- url: "#archivio"
+  title: "Archivio"
+- url: "#chisiamo"
+  title: "Chi siamo"
 - url: "#participate"
   title: "Participate"
  
