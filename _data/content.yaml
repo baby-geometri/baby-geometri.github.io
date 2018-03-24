@@ -4,9 +4,8 @@ main:
   <p class=\"text-faded mb-4\">Anche qui</p>"
 
 
-
-pagina:
-  title: "Pagina"
+chi siamo:
+  title: "Chi siamo"
   text: "<p>
   Questo è del testo di esempio"
   who-we-are:
