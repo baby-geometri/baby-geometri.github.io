@@ -1,9 +1,9 @@
-- url: "http://pianotriennale-ict.readthedocs.io/en/latest/"
-  title: "Link 1"
+- url: "http://www.dm.unipi.it/webnew/"
+  title: "Dm.unipi"
   blank: true
   divider: true
-- url: "https://developers.italia.it/en"
-  title: "Link 2"
+- url: "http://phd.sns.it/it/matematica/"
+  title: "phd @ SNS"
   blank: true
 - url: "https://designers.italia.it/"
   title: "Designers"
