@@ -34,7 +34,7 @@ archivio:
   
 following:
   title: "A seguire"
-  text: "Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Pellentesque habitant morbi tristique senectus et netus. Quam temere in vitiis, legem sancimus haerentia. Quis aute iure reprehenderit in voluptate velit esse. At nos hinc posthac, sitientis piros Afros."
+  text: "<p> Nihilntte iure reprehenderit in voluptate velit esse. At nos hinc posthac, sitientis piros Afros.</p>"
   
 footer:
   text: "<p>I am the footer <a href=\"../../\">bluuuh</a>.</p>"
@@ -49,4 +49,4 @@ participate:
   phone:  +00 000 000 000
   email:  my@email.com
 footer:
-  text: "<p>I am the footer <a href=\"../../\">blah</a>.</p>"
+  text: "<p>I am the footer <a href=\"../../\">blih</a>.</p>"
