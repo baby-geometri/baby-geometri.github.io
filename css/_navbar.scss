@@ -29,17 +29,17 @@
     border-bottom: 1px solid fade-out($gray-900, .9);
     background-color: $white;
     .navbar-brand {
-      color: $primary;
+      color: $warning;
       &:focus,
       &:hover {
-        color: darken($primary, .1);
+        color: darken($warning, .1);
       }
     }
     .navbar-nav > li.nav-item > a.nav-link,
     .navbar-nav > li.nav-item > a.nav-link:focus {
       color: $gray-900;
       &:hover {
-        color: $primary;
+        color: $warning;
       }
     }
   }
