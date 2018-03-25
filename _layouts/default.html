@@ -76,32 +76,29 @@
       </div>
     </div>
   </div>
+	
   <div class="container">
+    <div class="row">    
+       <div class="col-lg-8 mx-auto text-center">
+  <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#abstract">
+   	Abstract  </button>
+  <div id="abstract" class="collapse">   {{ site.data.content.whitepaper.abstract }}
+  	</div>
+    </div>
     
-    <div class="row">
-	    
-		      <ul>
-         
-  <li> <i style="font-size:24px" class="fa"> <span class="glyphicon glyphicon-map-marker"></span> {{ site.data.content.whitepaper.when }} </i>  
-	</li>
-	  
+		    
+<ul style="list-style-type:none">
+  <li> <i style="font-size:24px" class="fa"> <span class="glyphicon glyphicon-calendar"></span> {{ site.data.content.whitepaper.when }} </i>  
+	</li>	  
   <li> <i style="font-size:24px" class="fa"> <span class="glyphicon glyphicon-time"></span> {{ site.data.content.whitepaper.time }} </i> 
 	</li>
-  <li> <i style="font-size:24px" class="fa"> <span class="glyphicon glyphicon-calendar"></span> {{ site.data.content.whitepaper.where }}  </i> 
-	</li>
-		      </ul>
-      <div class="col-lg-8 mx-auto text-center">
-
-
-  <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#abstract">
-   Abstract  </button>
-  <div id="abstract" class="collapse">   {{ site.data.content.whitepaper.abstract }}
+  <li> <i style="font-size:24px" class="fa"> <span class="glyphicon glyphicon-map-marker"></span> {{ site.data.content.whitepaper.where }}  </i> 
+	</li>    
+</ul>
+      
+	</div>
   </div>
-   
-         
-      </div>
-    </div>
-  </div>
+
 </section>
    
    
