@@ -50,7 +50,8 @@
         <ul class="nav nav-fill justify-content-center">
           {% for nav_item in site.data.nav-main %}
           <li class="nav-item">
-	  <a class="nav-link-outline-light text-white js-scroll-trigger" href="{{ nav_item.url }}">{{ nav_item.title }}</a>
+	  <a class="nav-link-outline-light text-white js-scroll-trigger" href="{{ nav_item.url }}"> 
+		  <p class="font-weight-bold">{{ nav_item.title }}</p> </a>
           </li>
           {% endfor %}
         </ul>
