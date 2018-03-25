@@ -1,21 +1,7 @@
-layout: page
----
+<html>
+	<head>
+	layout: page
 
-# Ciao, questa è una pagina
-
-
-   <script type="text/javascript" language="javascript">
-function visualizza(id){
-  if (document.getElementById){
-    if(document.getElementById(id).style.display == 'none'){
-      document.getElementById(id).style.display = 'block';
-    }else{
-      document.getElementById(id).style.display = 'none';
-    }
-  }
-}
-</script>
-   
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -33,8 +19,9 @@ function visualizza(id){
  
  <title>Baby Geometri</title>
  
-  
+  </head>
 
+<body>
 
 
 
@@ -42,32 +29,6 @@ function visualizza(id){
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-
-<header class="masthead text-center text-white d-flex">
-  <div class="container my-auto">
-    <div class="row">
-      <div class="col-lg-10 mx-auto">
-        <h1 class="text-uppercase">
-          <strong>{{ site.data.content.main.title }}</strong>
-        </h1>
-        {{ site.data.content.main.text }}
-      </div>
-      <div class="col-lg-8 mx-auto">
-        <ul class="nav nav-fill justify-content-center">
-          {% for nav_item in site.data.nav-main %}
-          <li class="nav-item">
-            <a class="nav-link text-white js-scroll-trigger" href="{{ nav_item.url }}">{{ nav_item.title }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-        <hr>
-        <a class="btn btn-warning btn-xl js-scroll-trigger" href="#whitepaper">Coming up</a>
-      </div>
-    </div>
-  </div>
-	
-</header>
-<body id="top">
 
  
      
@@ -92,7 +53,7 @@ function visualizza(id){
 	<i style="font-size:24px" class="fa">&#xf073;</i> Venerd&iacute; 09/03/2018
 	</li>
 
-	
 </ul>
- 
 
+</body> 
+</html>
