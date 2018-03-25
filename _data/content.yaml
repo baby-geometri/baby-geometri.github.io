@@ -10,7 +10,14 @@ whitepaper:
   where: "Aula seminari - Dipartimento di Matematica"
   when: "Mercoledì 17/04/18"
   time: "16.30"
-  abstract: "Questo è un abstract suuuper interessante"
+  abstract: "La norma di Thurston é una norma definita sull'omologia di una 3-varietà M e descrive 
+  la complessità delle superfici contenute nella varietà. Al pari di ogni norma su uno spazio euclideo, 
+  anche la norma di Thurston é descritta dalla sua palla unitaria, in generale un corpo convesso simmetrico, 
+  in questo caso particolare un politopo finito. Come scoperto da Thurston, alcune facce di questo politopo 
+  organizzano i modi in cui M può essere descritta come una fibrazione su S^1. Scopo del seminario é un'introduzione 
+  a questi oggetti seguendo da vicino l'articolo originale di Thurston. Tempo permettendo discuteremo 
+  il caso di particolare interesse delle 3-varietà iperboliche e di alcuni
+  risultati che descrivono come la geometria della varietà e la norma di Thurston sono legate."
 
 
 chisiamo:
