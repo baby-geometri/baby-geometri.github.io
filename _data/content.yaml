@@ -1,7 +1,7 @@
 main:
   title: "Baby geometri"
-  text: "<p class=\"text-faded mb-4\">Università degli Studi di Pisa - Scuola Normale Superiore</p>
-  <p class=\"text-faded mb-4\">Anche qui</p>"
+  text: "<p class=\"text-faded mb-4\"> Seminari di Geometria e Topologia</p>
+  <p class=\"text-faded mb-4\">Università degli Studi di Pisa - Scuola Normale Superiore</p>"
 
 whitepaper:
   title: "La norma di Thurston"
