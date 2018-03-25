@@ -50,16 +50,13 @@
         <ul class="nav nav-fill justify-content-center">
           {% for nav_item in site.data.nav-main %}
           <li class="nav-item">
-            <a class="nav-link text-white js-scroll-trigger" href="{{ nav_item.url }}">{{ nav_item.title }}</a>
+	<button type="button" class="btn btn-outline-light" href="{{ nav_item.url }}">{{ nav_item.title }}</button>
           </li>
           {% endfor %}
         </ul>
         <hr>
- <a class="btn btn-outline-white wow fadeInDown waves-effect waves-light" style="visibility: visible; ">Abot me</a>
         <a class="btn btn-warning btn-xl js-scroll-trigger" href="#whitepaper">Coming up</a>
-        <a class="btn btn-outline-light btn-xl js-scroll-trigger" href="#whitepaper"> <p class="font-weight-bold">Coming up</p>
-</a>
-	      <button type="button" class="btn btn-outline-warning" href="#whitepaper">Prva</button>
+	 <button type="button" class="btn btn-outline-warning" href="#whitepaper">Prva</button>
 
       </div>
     </div>
