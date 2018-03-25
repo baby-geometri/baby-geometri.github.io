@@ -82,22 +82,15 @@ function visualizza(id){
 
 <ul>
 	
-	<li>  <big> NICOLETTA TARDINI (Università degli studi di Parma)  </big> 
+<li>  <big> NICOLETTA TARDINI (Università degli studi di Parma)  </big> 
 	<div id="testo"><a href="#" onclick="visualizza('comparsa'); return false">
 	<b> Kahler o non-Kahler, questo è il problema. </b></a></div>
-	<div id="comparsa" style="display:none"><p> Le variet`a Kahleriane, introdotte negli anni ’30, rappresentano una classe
-	speciale di varietà differenziabili poiché possiedono una struttura complessa,
-	una struttura metrica e una struttura simplettica che sono compatibili tra
-	loro. Esempi di tali varietà sono le varietà algebriche proiettive. La presenza
-	di quelle tre strutture geometriche su una varietà Kahleriana comporta una
-	serie di risultati molto forti, da cui seguono ostruzioni anche a livello topologico. Risulta quindi naturale indebolire le tre strutture in gioco e/o le loro
-	relazioni: nasce quindi cos&iacute; la geometria non-Kahleriana. I primi esempi di
-	varietà non Kahleriane risalgono agli anni ’50 ma è negli ultimi 30 anni che
-	questa geometria ha fatto maggiori passi in avanti. Nel corso del seminario introdurr&ograve; le varietà (non-) Kahleriane, di cui vedremo vari esempi, e analizzeremo una serie di ostruzioni (di carattere coomologico) per capire se una varietà è Kahler o non-Kahler.
-	</p> </div>
+	<div id="comparsa" style="display:none"> <p> Le varietza
+	danni che questa geometria ha fatto maggiori passi in avanti. Nel corso del seminario introdurr&ograve; le varietà 	(non-) Kahleriane, di cui vedremo vari esempi, e analizzeremo una serie di ostruzioni (di carattere coomologico) per 		capire se una varietà è Kahler o non-Kahler.
+	</p> 
+	</div>
 	<i style="font-size:24px" class="fa">&#xf073;</i> Venerd&iacute; 09/03/2018
 	</li>
-	
 
 	
 </ul>
@@ -106,7 +99,6 @@ function visualizza(id){
      
   
   </main>
-</div>
 
 </body>
 </html>
