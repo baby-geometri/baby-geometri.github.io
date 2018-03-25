@@ -15,7 +15,14 @@ whitepaper:
 
 chisiamo:
   title: "Chi siamo"
-  text: "<p> I baby geometri sono un ciclo di seminari.... attualmente organizzato da.. </p>"
+  text: "<p> I Baby Geometri sono un ciclo di seminari di Geometria e Topologia organizzati dai dottorandi
+  dell'Università di Pisa (UNIPI) in collaborazione con la Scuola Normale Superiore di Pisa (SNS) e 
+  l'Università degli studi di Firenze (UNIFI). Il tema dei seminari varia dall'introduzione ad argomenti di 
+  Geometria e Topologia avanzati a tematiche di ricerca attuali. Si tratta di seminari (informali) su tematiche
+  di ricerca o di argomenti avanzati. Poiché il pubblico é composto prevalentemente da studenti della Laurea Magistrale, 
+  di Dottorato e da Assegnisti (nonostante spesso partecipino anche Ricercatori e Professori), ogni seminario prevede 
+  una parte introduttiva del problema apprezzabile sia da studenti del terz'anno della Triennale sia da studenti del 
+  primo anno della Magistrale. </p>"
   people:
     - point: "Giulio"
     - point: "Marco"
