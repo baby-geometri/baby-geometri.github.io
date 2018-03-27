@@ -7,7 +7,8 @@ layout: page
 
 # Ciao, questa è una pagina
 prova prova
- <ul> <li> ciaociao
+ <ul> <li>
+  {{ site.data.content.whitepaper.where }} 
   </li>
   </ul>
 
