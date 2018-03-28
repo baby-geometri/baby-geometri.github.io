@@ -3,7 +3,10 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
+
 dato1: ciaociao
+
+title: provaaa
 ---
 
 # Ciao, questa è una pagina
@@ -35,3 +38,17 @@ prova prova {{ site.pagina.dato1 }} #site.pagina.dato1
     <a href="#" class="btn btn-primary">Vai avanti</a>
   </div>
 </div>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+  </head>
+  <body>
+    
+  </body>
+</html>
