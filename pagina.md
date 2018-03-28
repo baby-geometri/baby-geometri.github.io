@@ -3,7 +3,6 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
-
 dato1: ciaociao
 ---
 
@@ -16,7 +15,7 @@ prova prova {{ site.pagina.dato1 }} #site.pagina.dato1
  {{ site.data.content.whitepaper.where }}
   </li>
  
- <li> {{ dato1 }}
+ <li> {{ layout }}
  </li>
  
  <li>  
