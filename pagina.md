@@ -13,10 +13,10 @@ prova prova {{ site.pagina.dato1 }} #site.pagina.dato1
   {{ site.data.content.whitepaper.where }} 
    <\li>
   <li>
- #site.data.content.whitepaper.where 
+ {{ data.content.whitepaper.where }}
   </li>
  
- <li> site.data.content.whitepaper.where
+ <li> site.confing.title
  </li>
  
  <li>  
