@@ -46,7 +46,7 @@ prova prova {{ site.pagina.dato1 }} #site.pagina.dato1
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <p> {{title}} </p>
+    <p> {{  title  }} </p>
   </head>
   <body>
     
