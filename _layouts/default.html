@@ -126,11 +126,18 @@
 
 	      prova Latex $$\rho\cos\theta $$
 	      
-	      {{ site.data.speaker.uno.nome }}
-	      
-	      <a  href="./prova2.html">link text</a>
-
         <h2 class="section-heading">{{ site.data.content.following.title }} </h2>
+	      
+	       <ul class="nav nav-fill justify-content-center">
+          {% for nav_item in site.data.futuri %}
+          <li class="nav-item">	    
+		  <a class="btn btn-outline-light js-scroll-trigger" href="{{ nav_item.nome }}">
+		     {{ nav_item.luogo }}   </a>	 
+		</li>
+          {% endfor %}
+        </ul>
+	      
+	      
         <hr class="light my-4">
          {{ site.data.content.following.text }} 
      </div>
