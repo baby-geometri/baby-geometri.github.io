@@ -8,7 +8,7 @@ dato1: ciaociao
 ---
 
 # Ciao, questa è una pagina
-prova prova
+prova prova site.pagina.dato1 
  <ul> <li>
   {{ site.data.content.whitepaper.where }} 
    <\li>
@@ -19,7 +19,7 @@ prova prova
  <li> site.data.content.whitepaper.where
  </li>
  
- <li> {{ site.pagina.dato1 }}
+ <li>  
  </li>
  
   <li> site.espe.esperimento 
