@@ -16,7 +16,7 @@ prova prova {{ site.pagina.dato1 }} #site.pagina.dato1
  {{ site.data.content.whitepaper.where }}
   </li>
  
- <li> site.confing.title
+ <li> {{ dato1 }}
  </li>
  
  <li>  
