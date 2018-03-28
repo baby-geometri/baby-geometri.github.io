@@ -20,7 +20,7 @@ prova prova
  <li> _data.content.whitepaper.where
  </li>
  
-  <li> site.espe.title
+  <li> {{ site.espe.title }}
  </li>
  
   </ul>
