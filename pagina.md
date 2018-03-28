@@ -22,7 +22,7 @@ prova prova {{ site.pagina.dato1 }} #site.pagina.dato1
  <li>  
  </li>
  
-  <li> site.espe.esperimento 
+  <li> {{ site.espe.esperimento }}
  </li>
  
   </ul>
