@@ -1,16 +1,13 @@
 - url: "http://www.dm.unipi.it/webnew/it/dottorato/phd"
   title: "PhD @ Unipi"
   blank: true
-  divider: true
 - url: "http://phd.sns.it/it/matematica/"
   title: "PhD @ SNS"
   blank: true
-- url: "https://forum.italia.it/"
-  title: "Forum"
+  divider: true
+- url: "http://people.dm.unipi.it/babygeometri/index.html"
+  title: "Vecchio sito"
   blank: true
-- url: "https://docs.developers.italia.it/"
-  title: "Docs"
-  blank: true
-- url: "https://github.com/italia/"
-  title: "GitHub"
-  blank: true
+- url: "https://www.dm.unipi.it/webnew/it/ricerca/geometria-mat03"
+  title: "Geometria Pisa"
+  
