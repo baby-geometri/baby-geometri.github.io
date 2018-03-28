@@ -11,6 +11,13 @@ prova prova
   {{ site.data.content.whitepaper.where }} 
  #site.data.content.whitepaper.where 
   </li>
+ 
+ <li> site.data.content.whitepaper.where
+ </li>
+ 
+ <li> _data.content.whitepaper.where
+ </li>
+ 
   </ul>
 
 
