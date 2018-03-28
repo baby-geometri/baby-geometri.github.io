@@ -9,7 +9,7 @@ layout: page
 prova prova
  <ul> <li>
   {{ site.data.content.whitepaper.where }} 
- <\li>
+   <\li>
   <li>
  #site.data.content.whitepaper.where 
   </li>
