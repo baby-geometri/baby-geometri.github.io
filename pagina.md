@@ -13,7 +13,7 @@ prova prova {{ site.pagina.dato1 }} #site.pagina.dato1
   {{ site.data.content.whitepaper.where }} 
    <\li>
   <li>
- {{ data.content.whitepaper.where }}
+ {{ site.data.content.whitepaper.where }}
   </li>
  
  <li> site.confing.title
