@@ -8,24 +8,30 @@
     <header class="masthead text-center text-white d-flex">
       <div class="container my-auto">
         <div class="row">
-          <div class="col-lg-10 mx-auto">
+          <div class="col-lg-12 mx-auto">
             <h1 class="text-uppercase">
               <strong>{{ site.data.content.main.title }}</strong>
             </h1>
             {{ site.data.content.main.text }}
           </div>
-          <div class="col-lg-8 mx-auto">
+        </div>
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
             <ul class="nav nav-pills nav-fill">
               {% for nav_item in site.data.nav-main %}
               <li class="nav-item">	   
-                <a class="btn btn-outline-light js-scroll-trigger" href="{{ nav_item.url }}">
+                <a class="nav-link btn btn-outline-light js-scroll-trigger" href="{{ nav_item.url }}">
                 {{ nav_item.title }}   </a>
               </li>
               {% endfor %}
             </ul>
+	        <div class="col-lg-2"></div>
             <hr>
             <a class="btn btn-warning btn-xl js-scroll-trigger" href="#whitepaper">Coming up</a>
           </div>
+          
+          <div class="col-lg-2"></div>
         </div>
       </div>
     </header>
@@ -33,6 +39,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
+            <img src="holder.js/200x200" class="rounded-circle" />
             <h2 class="section-heading">{{ site.data.content.whitepaper.title }}</h2>
             <hr class="my-4">
             <h3>
@@ -140,22 +147,25 @@
         </ul>
       </div>
       <div class="card-deck">
-        <div class="card text-center">
-          <img class="card-img-top" src="img/giulio.jpeg" class="rounded-circle">
+        <div class="card text-center col-lg-4">
+          <img class="card-img-top" src="img/giulio.jpeg">
           <div class="card-body">
+          <img src="holder.js/200x200" class="rounded-circle" />
             <a href="http://people.dm.unipi.it/moraschini/" class="btn btn-primary">Giulio</a> 
             <p class="card-text">Studente di Martelli. Mi piacciono i disegni e le sommatorie</p>
           </div>
         </div>
-        <div class="card text-center">
+        <div class="card text-center col-lg-4">
           <div class="card-body">
+          <img src="holder.js/400x400" class="img-fluid rounded" style="height: auto; max-width: 100%;"/>
             <h5 class="card-title">Marco</h5>
             <p class="card-text">Studente di Martelli. Mi piaccion i disegni e le sommatorie</p>
             <a href="http://people.dm.unipi.it/moraschini/" class="btn btn-primary">Contattami!</a>
           </div>
         </div>
-        <div class="card text-center">
+        <div class="card text-center col-lg-4">
           <div class="card-body">
+          <img src="holder.js/200x200" class="img-fluid rounded" />
             <h5 class="card-title">Edoardo</h5>
             <p class="card-text">Studente di Martelli. Mi piaccionoo i disegni e le sommatorie</p>
             <a href="https://it.wikipedia.org/wiki/Usmate_Velate" class="btn btn-primary">Best Place</a>
