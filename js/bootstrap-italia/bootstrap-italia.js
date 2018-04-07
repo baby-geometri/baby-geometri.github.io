@@ -1,5 +1,5 @@
 /*!
- * Bootstrap Italia v0.1.0-alpha
+ * Bootstrap Italia v0.4.4
  * Copyright 2018
  * Licensed under the BSD 3-Clause "New" or "Revised" License (https://github.com/italia/bootstrap-italia/blob/master/LICENSE)
  */
@@ -1102,8 +1102,8 @@ var Collapse = function ($) {
       this._config = this._getConfig(config);
       this._triggerArray = $.makeArray($('[data-toggle="collapse"][href="#' + element.id + '"],' + ('[data-toggle="collapse"][data-target="#' + element.id + '"]')));
       var tabToggles = $(Selector.DATA_TOGGLE);
-      for (var i = 0; i < tabToggles.length; i++) {
-        var elem = tabToggles[i];
+      for (var _i = 0; _i < tabToggles.length; _i++) {
+        var elem = tabToggles[_i];
         var selector = Util.getSelectorFromElement(elem);
         if (selector !== null && $(selector).filter(element).length > 0) {
           this._selector = selector;
@@ -1228,8 +1228,8 @@ var Collapse = function ($) {
       $(this._element).addClass(ClassName.COLLAPSING).removeClass(ClassName.COLLAPSE).removeClass(ClassName.SHOW);
 
       if (this._triggerArray.length > 0) {
-        for (var i = 0; i < this._triggerArray.length; i++) {
-          var trigger = this._triggerArray[i];
+        for (var _i2 = 0; _i2 < this._triggerArray.length; _i2++) {
+          var trigger = this._triggerArray[_i2];
           var selector = Util.getSelectorFromElement(trigger);
           if (selector !== null) {
             var $elem = $(selector);
@@ -1697,11 +1697,11 @@ var Dropdown = function ($) {
       }
 
       var toggles = $.makeArray($(Selector.DATA_TOGGLE));
-      for (var i = 0; i < toggles.length; i++) {
-        var parent = Dropdown._getParentFromElement(toggles[i]);
-        var context = $(toggles[i]).data(DATA_KEY);
+      for (var _i3 = 0; _i3 < toggles.length; _i3++) {
+        var parent = Dropdown._getParentFromElement(toggles[_i3]);
+        var context = $(toggles[_i3]).data(DATA_KEY);
         var relatedTarget = {
-          relatedTarget: toggles[i]
+          relatedTarget: toggles[_i3]
         };
 
         if (!context) {
@@ -1729,7 +1729,7 @@ var Dropdown = function ($) {
           $('body').children().off('mouseover', null, $.noop);
         }
 
-        toggles[i].setAttribute('aria-expanded', 'false');
+        toggles[_i3].setAttribute('aria-expanded', 'false');
 
         $(dropdownMenu).removeClass(ClassName.SHOW);
         $(parent).removeClass(ClassName.SHOW).trigger($.Event(Event.HIDDEN, relatedTarget));
@@ -3521,11 +3521,11 @@ var ScrollSpy = function ($) {
         return;
       }
 
-      for (var i = this._offsets.length; i--;) {
-        var isActiveTarget = this._activeTarget !== this._targets[i] && scrollTop >= this._offsets[i] && (typeof this._offsets[i + 1] === 'undefined' || scrollTop < this._offsets[i + 1]);
+      for (var _i4 = this._offsets.length; _i4--;) {
+        var isActiveTarget = this._activeTarget !== this._targets[_i4] && scrollTop >= this._offsets[_i4] && (typeof this._offsets[_i4 + 1] === 'undefined' || scrollTop < this._offsets[_i4 + 1]);
 
         if (isActiveTarget) {
-          this._activate(this._targets[i]);
+          this._activate(this._targets[_i4]);
         }
       }
     };
@@ -3610,8 +3610,8 @@ var ScrollSpy = function ($) {
   $(window).on(Event.LOAD_DATA_API, function () {
     var scrollSpys = $.makeArray($(Selector.DATA_SPY));
 
-    for (var i = scrollSpys.length; i--;) {
-      var $spy = $(scrollSpys[i]);
+    for (var _i5 = scrollSpys.length; _i5--;) {
+      var $spy = $(scrollSpys[_i5]);
       ScrollSpy._jQueryInterface.call($spy, $spy.data());
     }
   });
@@ -3885,7 +3885,313 @@ var Tab = function ($) {
   return Tab;
 }($);
 
-console.log("bootstrap italia");
+'use strict';
+
+$.fn.autocomplete = function (options) {
+
+  // Default options
+  var defaults = {
+    data: {}
+  };
+
+  var ENTER_CHAR_CODE = 13;
+
+  // Get options
+  options = $.extend(defaults, options);
+
+  return this.each(function () {
+
+    // text input
+    var $input = $(this);
+    var $autocomplete = void 0;
+
+    // assign data from options
+    var data = eval($(this).attr("data-db"));
+
+    if (Object.keys(data).length) {
+
+      $autocomplete = $('<ul class="autocomplete-wrap"></ul>');
+
+      $autocomplete.insertAfter($(this));
+    };
+
+    // add button clear
+    $input.after('<button class="autocomplete-clear"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="https://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" /><path d="M0 0h24v24H0z" fill="none" /></svg></button>');
+
+    // Listen if key was pressed
+    $input.on('keyup', function (e) {
+
+      // get value from input
+      var q = $input.val();
+
+      $autocomplete.empty();
+
+      // check if input isn't empty
+      if (q.length) {
+
+        for (var item in data) {
+
+          // check if item contains value that we're looking for
+          if (data[item].toLowerCase().indexOf(q.toLowerCase()) !== -1) {
+            var option = $('<li>' + data[item] + '</li>');
+
+            $autocomplete.append(option);
+          }
+        }
+      }
+
+      if (e.which === ENTER_CHAR_CODE) {
+        $autocomplete.children(":first").trigger('click');
+        $autocomplete.empty();
+      }
+
+      if (q.length === 0) {
+        $('.autocomplete-clear').css('visibility', 'hidden');
+      } else {
+        $('.autocomplete-clear').css('visibility', 'visible');
+      }
+    });
+
+    $autocomplete.on('click', 'li', function () {
+
+      // Set input value after click
+      $input.val($(this).text());
+
+      // Clear autocomplete
+      $autocomplete.empty();
+    });
+
+    $('.autocomplete-clear').on('click', function (e) {
+      e.preventDefault();
+      $input.val('');
+      $(this).css('visibility', 'hidden');
+      $autocomplete.empty();
+      $(this).parent().find('label').removeClass('active');
+    });
+  });
+};
+
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap (v4.0.0): cookiebar.js
+ * --------------------------------------------------------------------------
+ */
+
+var Cookiebar = function ($) {
+  /**
+   * ------------------------------------------------------------------------
+   * Constants
+   * ------------------------------------------------------------------------
+   */
+
+  var NAME = 'cookiebar';
+  var VERSION = '4.0.0';
+  var DATA_KEY = 'bs.cookiebar';
+  var EVENT_KEY = '.' + DATA_KEY;
+  var DATA_API_KEY = '.data-api';
+  var JQUERY_NO_CONFLICT = $.fn[NAME];
+  var TRANSITION_DURATION = 0; // TODO
+  var COOKIE_NAME = "cookies_consent";
+  var COOKIE_VALUE = "true";
+  var COOKIE_EXPIRE = 30;
+
+  var Selector = {
+    COOKIE_BAR: '.cookiebar',
+    ACCEPT: '[data-accept="cookiebar"]'
+  };
+
+  var Event = {
+    CLOSE: 'close' + EVENT_KEY,
+    CLOSED: 'closed' + EVENT_KEY,
+    LOAD_DATA_API: 'load' + EVENT_KEY + DATA_API_KEY,
+    CLICK_DATA_API: 'click' + EVENT_KEY + DATA_API_KEY
+  };
+
+  var ClassName = {
+    COOKIE_BAR: 'cookiebar',
+    SHOW: 'show'
+
+    /**
+     * ------------------------------------------------------------------------
+     * Class Definition
+     * ------------------------------------------------------------------------
+     */
+
+  };
+  var Cookiebar = function () {
+    function Cookiebar(element) {
+      _classCallCheck(this, Cookiebar);
+
+      this._element = element;
+    }
+
+    // Getters
+
+    // Public
+
+    Cookiebar.prototype.show = function show(element) {
+      $(element).addClass(ClassName.SHOW).attr('aria-hidden', 'false').attr('aria-live', 'polite');
+    };
+
+    Cookiebar.prototype.close = function close(element) {
+      element = element || this._element;
+
+      var rootElement = this._getRootElement(element);
+      var customEvent = this._triggerCloseEvent(rootElement);
+
+      if (customEvent.isDefaultPrevented()) {
+        return;
+      }
+      this._setCookieEU();
+      this._removeElement(rootElement);
+    };
+
+    Cookiebar.prototype.dispose = function dispose() {
+      $.removeData(this._element, DATA_KEY);
+      this._element = null;
+    };
+
+    // Private
+
+    Cookiebar.prototype._setCookieEU = function _setCookieEU() {
+      var exdate = new Date();
+      exdate.setDate(exdate.getDate() + COOKIE_EXPIRE);
+      var c_value = escape(COOKIE_VALUE) + (COOKIE_EXPIRE == null ? "" : "; expires=" + exdate.toUTCString());
+      document.cookie = COOKIE_NAME + "=" + c_value + "; path=/";
+    };
+
+    Cookiebar.prototype._getRootElement = function _getRootElement(element) {
+      var selector = Util.getSelectorFromElement(element);
+      var parent = false;
+
+      if (selector) {
+        parent = $(selector)[0];
+      }
+
+      if (!parent) {
+        parent = $(element).closest('.' + ClassName.COOKIE_BAR)[0];
+      }
+
+      return parent;
+    };
+
+    Cookiebar.prototype._triggerCloseEvent = function _triggerCloseEvent(element) {
+      var closeEvent = $.Event(Event.CLOSE);
+
+      $(element).trigger(closeEvent);
+      return closeEvent;
+    };
+
+    Cookiebar.prototype._removeElement = function _removeElement(element) {
+      $(element).removeClass(ClassName.SHOW).attr('aria-hidden', 'true').attr('aria-live', 'off');
+
+      this._destroyElement(element);
+    };
+
+    Cookiebar.prototype._destroyElement = function _destroyElement(element) {
+      $(element).detach().trigger(Event.CLOSED).remove();
+    };
+
+    // Static
+
+    Cookiebar._jQueryInterface = function _jQueryInterface(config) {
+      return this.each(function () {
+        var $element = $(this);
+        var data = $element.data(DATA_KEY);
+
+        if (!data) {
+          data = new Cookiebar(this);
+          $element.data(DATA_KEY, data);
+        }
+
+        if (typeof config === 'string') {
+          if (typeof data[config] === 'undefined') {
+            throw new TypeError('No method named "' + config + '"');
+          }
+          data[config](this);
+        }
+      });
+    };
+
+    Cookiebar._handleAccept = function _handleAccept(cookiebarInstance) {
+      return function (event) {
+        if (event) {
+          event.preventDefault();
+        }
+
+        cookiebarInstance.close(this);
+      };
+    };
+
+    Cookiebar._handleConsent = function _handleConsent(cookiebarInstance) {
+      return function (event) {
+        if (event) {
+          event.preventDefault();
+        }
+
+        cookiebarInstance.close(this);
+      };
+    };
+
+    Cookiebar._getCookieEU = function _getCookieEU() {
+      var i,
+          x,
+          y,
+          ARRcookies = document.cookie.split(";");
+      for (i = 0; i < ARRcookies.length; i++) {
+        x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+        y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+        x = x.replace(/^\s+|\s+$/g, "");
+        if (x == COOKIE_NAME) {
+          return unescape(y);
+        }
+      }
+    };
+
+    _createClass(Cookiebar, null, [{
+      key: 'VERSION',
+      get: function get() {
+        return VERSION;
+      }
+    }]);
+
+    return Cookiebar;
+  }();
+
+  /**
+   * ------------------------------------------------------------------------
+   * Data Api implementation
+   * ------------------------------------------------------------------------
+   */
+
+  $(document).on(Event.CLICK_DATA_API, Selector.ACCEPT, Cookiebar._handleAccept(new Cookiebar()));
+
+  $(window).on(Event.LOAD_DATA_API, function () {
+    var cookiebars = $.makeArray($(Selector.COOKIE_BAR));
+    var consent = Cookiebar._getCookieEU();
+    if (!consent) {
+      for (var _i6 = cookiebars.length; _i6--;) {
+        var $cookiebar = $(cookiebars[_i6]);
+        Cookiebar._jQueryInterface.call($cookiebar, 'show');
+      }
+    }
+  });
+
+  /**
+   * ------------------------------------------------------------------------
+   * jQuery
+   * ------------------------------------------------------------------------
+   */
+
+  $.fn[NAME] = Cookiebar._jQueryInterface;
+  $.fn[NAME].Constructor = Cookiebar;
+  $.fn[NAME].noConflict = function () {
+    $.fn[NAME] = JQUERY_NO_CONFLICT;
+    return Cookiebar._jQueryInterface;
+  };
+
+  return Cookiebar;
+}($);
 
 /**
  * --------------------------------------------------------------------------
@@ -4426,4 +4732,935 @@ var Zoom = function ($) {
     new ZoomService().listen();
   });
 }(jQuery);
+
+$(function () {
+  // Inizializzazione effetto active sulle label quando i loro input valorizzati
+  $('body').on('click', '.form-group input + label, .form-group textarea + label', function () {
+    $(this).closest('.form-group').addClass('active');
+  }).on('focusin', '.form-group input:not(.select-dropdown, .select-dropdown-search), .form-group textarea', function () {
+    $(this).closest('.form-group').addClass('active');
+  }).on('focusout', '.form-group input:not(.select-dropdown, .select-dropdown-search), .form-group textarea', function () {
+    $(this).closest('.form-group').removeClass('active');
+    $(this).siblings('label').toggleClass('active', $(this).val() !== '');
+  }).on('focusout', '.form-group input[type=\'file\'], input[class$=\'picker\']', function () {
+    $(this).siblings('label').addClass('active');
+  }).on('change', 'input:file', function (e) {
+    var numFiles = e.currentTarget.files.length;
+    var nomiFiles = '';
+    var multi = '';
+    for (i = 0; i < numFiles; i++) {
+      fileSize = parseInt(e.currentTarget.files[i].size, 10) / 1024;
+      filesize = Math.round(fileSize);
+      nomiFiles = nomiFiles + e.currentTarget.files[i].name + ' (' + filesize + 'kb); ';
+    }
+    if (numFiles > 1) {
+      multi = numFiles + ' file da caricare: ';
+    }
+    $(this).siblings('.form-file-name').text(multi + nomiFiles);
+  });
+
+  $('.form-group :input[value], input[class$=\'picker\']').siblings('label').addClass('active');
+
+  $('.autocomplete').autocomplete();
+});
+
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap (v4.0.0): Select.js
+ * --------------------------------------------------------------------------
+ */
+
+var Select = function ($) {
+
+  /**
+   * ------------------------------------------------------------------------
+   * Constants
+   * ------------------------------------------------------------------------
+   */
+
+  var NAME = 'custom-select';
+  var DATA_KEY = 'bs.custom-select';
+  var VERSION = 'v4.0.0';
+  var EVENT_KEY = '.' + DATA_KEY;
+  var DATA_API_KEY = '.data-api';
+  var JQUERY_NO_CONFLICT = $.fn[NAME];
+
+  var Default = {};
+
+  var Event = {
+    LOAD_DATA_API: 'load' + EVENT_KEY + DATA_API_KEY
+  };
+
+  var Selector = {
+    SELECT: '.custom-select'
+
+    /**
+     * ------------------------------------------------------------------------
+     * Class Definition
+     * ------------------------------------------------------------------------
+     */
+
+  };
+  var Select = function () {
+    function Select(element, config) {
+      _classCallCheck(this, Select);
+
+      this._elements = [];
+      this._element = element;
+      this._customElement = null;
+      this._isMultiple = false;
+      this._isSearchable = false;
+      this._optionsHover = false;
+
+      this._processImages();
+    }
+
+    // public
+
+    Select.prototype.dispose = function dispose() {
+      $(window).off(EVENT_KEY);
+      $.removeData(this._element, DATA_KEY);
+
+      this._elements = null;
+      this._element = null;
+      this._customElement = null;
+      this._isMultiple = false;
+      this._isSearchable = false;
+      this._optionsHover = false;
+    };
+
+    // private
+
+    Select.prototype._handleResize = function _handleResize() {};
+
+    Select.prototype._processImages = function _processImages() {
+      var that = this;
+      var $select = $(this._element);
+      var uniqueID = this._guid();
+
+      var filterQuery = [],
+          wrapper = $('<div class="select-wrapper"></div>'),
+          selectChildren = $select.children('option, optgroup'),
+          valuesSelected = [];
+
+      this._isMultiple = Boolean($select.attr('multiple'));
+      this._isSearchable = Boolean($select.attr('searchable'));
+
+      this._customElement = $('<ul id="select-options-' + uniqueID + '" class="dropdown-menu ' + (this._isMultiple ? 'multiple-select-dropdown' : '') + '"></ul>');
+
+      var label = $select.find('option:selected').html() || $select.find('option:first').html() || '';
+
+      if ($select.data('select-id')) {
+        var selectOptionsListElement = 'ul#select-options-' + $select.data('select-id');
+        $select.parent().find('span.caret, input').remove().unwrap();
+        $(selectOptionsListElement).remove();
+      }
+
+      $select.data('select-id', uniqueID);
+
+      wrapper.addClass($select.attr('class'));
+
+      if (this._isSearchable) {
+        this._setSearchableOption();
+      }
+
+      if (selectChildren && selectChildren.length) {
+        selectChildren.each(function () {
+          if ($(this).is('option')) {
+            if (that._isMultiple) {
+              that._appendOptionWithIcon($select, $(this), 'multiple');
+            } else {
+              that._appendOptionWithIcon($select, $(this));
+            }
+          } else if ($(this).is('optgroup')) {
+            that._customElement.append($('<li class="optgroup"><span>' + $(this).attr('label') + '</span></li>'));
+
+            $(this).children('option').each(function () {
+              that._appendOptionWithIcon($select, $(this), 'optgroup-option');
+            });
+          }
+        });
+      }
+
+      this._customElement.find('li:not(.optgroup)').each(function (i) {
+        $(this).click(function (e) {
+          if (!$(this).hasClass('disabled') && !$(this).hasClass('optgroup')) {
+            var selected = true;
+
+            if (that._isMultiple) {
+              $('input[type="checkbox"]', this).prop('checked', function (i, v) {
+                return !v;
+              });
+              var optgroup = $select.find('optgroup').length;
+              if (that._isSearchable) {
+                if (optgroup) {
+                  selected = that._toggleEntryFromArray(valuesSelected, $(this).index() - $(this).prevAll('.optgroup').length - 1, $select);
+                } else {
+                  selected = that._toggleEntryFromArray(valuesSelected, $(this).index() - 1, $select);
+                }
+              } else if (optgroup) {
+                selected = that._toggleEntryFromArray(valuesSelected, $(this).index() - $(this).prevAll('.optgroup').length, $select);
+              } else {
+                selected = that._toggleEntryFromArray(valuesSelected, $(this).index(), $select);
+              }
+              $newSelect.trigger('focus');
+            } else {
+              that._customElement.find('li').removeClass('active');
+              $(this).toggleClass('active');
+              $newSelect.val($(this).text());
+            }
+
+            that._activateOption(that._customElement, $(this));
+            $select.find('option').eq(i).prop('selected', selected);
+            $select.trigger('change');
+          }
+
+          e.stopPropagation();
+        });
+      });
+
+      $select.wrap(wrapper);
+
+      var dropdownIcon = $('<span class="caret it-expand"></span>');
+      if ($select.is(':disabled')) {
+        dropdownIcon.addClass('disabled');
+      }
+
+      var sanitizedLabelHtml = label.replace(/"/g, '&quot;');
+
+      var $newSelect = $('<input type="text" class="dropdown select-dropdown" data-toggle="dropdown" readonly="true" ' + ($select.is(':disabled') ? 'disabled' : '') + ' data-activates="select-options-' + uniqueID + '" value="' + sanitizedLabelHtml + '"/>');
+      $select.before($newSelect);
+      $newSelect.before(dropdownIcon);
+
+      $newSelect.after(this._customElement);
+      if (!$select.is(':disabled')) {
+        $newSelect.dropdown({
+          hover: false,
+          closeOnClick: false
+        });
+      }
+
+      if ($select.attr('tabindex')) {
+        $($newSelect[0]).attr('tabindex', $select.attr('tabindex'));
+      }
+
+      $select.addClass('initialized');
+
+      if (!this._isMultiple && this._isSearchable) {
+        this._customElement.find('li').on('click', function () {
+          $newSelect.trigger('close');
+        });
+      }
+
+      this._customElement.hover(function () {
+        that._optionsHover = true;
+      }, function () {
+        that._optionsHover = false;
+      });
+
+      if (this._isMultiple) {
+        $select.find('option:selected:not(:disabled)').each(function () {
+          var index = $(this).index();
+
+          that._toggleEntryFromArray(valuesSelected, index, $select);
+          that._customElement.find('li').eq(index).find(':checkbox').prop('checked', true);
+        });
+      }
+
+      $newSelect.on({
+        focus: function focus(e) {
+          if ($('ul.select-dropdown').not(that._customElement[0]).is(':visible')) {
+            $('input.select-dropdown').trigger('close');
+          }
+          if (!that._customElement.is(':visible')) {
+            $(this).trigger('open', ['focus']);
+            var _label = $(this).val();
+            var selectedOption = that._customElement.find('li').filter(function () {
+              return $(this).text().toLowerCase() === _label.toLowerCase();
+            })[0];
+            that._activateOption(that._customElement, selectedOption);
+          }
+        },
+        click: function click(e) {
+          e.stopPropagation();
+        },
+        blur: function blur(e) {
+          if (!that._isMultiple && !that._isSearchable) {
+            $(this).trigger('close');
+          }
+          that._customElement.find('li.selected').removeClass('selected');
+        },
+        keydown: function keydown(e) {
+          if (e.which == 9) {
+            $newSelect.trigger('close');
+            return;
+          }
+
+          if (e.which == 40 && !that._customElement.is(':visible')) {
+            $newSelect.trigger('open');
+            return;
+          }
+
+          if (e.which == 13 && !that._customElement.is(':visible')) {
+            return;
+          }
+
+          e.preventDefault();
+
+          var letter = String.fromCharCode(e.which).toLowerCase(),
+              nonLetters = [9, 13, 27, 38, 40];
+          if (letter && nonLetters.indexOf(e.which) === -1) {
+            filterQuery.push(letter);
+
+            var string = filterQuery.join(''),
+                newOption = that._customElement.find('li').filter(function () {
+              return $(this).text().toLowerCase().indexOf(string) === 0;
+            })[0];
+
+            if (newOption) {
+              that._activateOption(that._customElement, newOption);
+            }
+          }
+
+          if (e.which == 13) {
+            var activeOption = that._customElement.find('li.selected:not(.disabled)')[0];
+            if (activeOption) {
+              $(activeOption).trigger('click');
+              if (!that._isMultiple) {
+                $newSelect.trigger('close');
+              }
+            }
+          }
+
+          if (e.which == 40) {
+            newOption = that._customElement.find('li.selected').length ? that._customElement.find('li.selected').next('li:not(.disabled)')[0] : that._customElement.find('li:not(.disabled)')[0];
+            that._activateOption(this._customElement, newOption);
+          }
+
+          if (e.which == 27) {
+            $newSelect.trigger('close');
+          }
+
+          if (e.which == 38) {
+            newOption = that._customElement.find('li.selected').prev('li:not(.disabled)')[0];
+            if (newOption) {
+              that._activateOption(that._customElement, newOption);
+            }
+          }
+
+          setTimeout(function () {
+            filterQuery = [];
+          }, 1000);
+        }
+      });
+
+      $(window).on('click', function (e) {
+        (that._isMultiple || that._isSearchable) && (that._optionsHover || $newSelect.trigger('close'));
+      });
+    };
+
+    Select.prototype._activateOption = function _activateOption(collection, newOption) {
+      if (newOption) {
+        collection.find('li.selected').removeClass('selected');
+        var option = $(newOption);
+        option.addClass('selected');
+      }
+    };
+
+    Select.prototype._setSearchableOption = function _setSearchableOption() {
+      var $select = $(this._element);
+      var element = $('<span class="search-wrap"><input type="text" class="search select-dropdown-search" placeholder="' + $select.attr('searchable') + '"></span>');
+      this._customElement.append(element);
+      element.find('.search').on('keyup', function (e) {
+
+        var ul = $(this).closest('ul');
+        var searchValue = $(this).val();
+
+        ul.find('li').find('span.filtrable').each(function () {
+          if (typeof this.outerText === 'string') {
+            var liValue = this.outerText.toLowerCase();
+
+            if (liValue.indexOf(searchValue.toLowerCase()) === -1) {
+              $(this).hide();
+              $(this).parent().hide();
+            } else {
+              $(this).show();
+              $(this).parent().show();
+            }
+          }
+        });
+      });
+    };
+
+    Select.prototype._appendOptionWithIcon = function _appendOptionWithIcon(select, option, type) {
+      var disabledClass = option.is(':disabled') ? 'disabled ' : '';
+      var optgroupClass = type === 'optgroup-option' ? 'optgroup-option ' : '';
+
+      var icon_url = option.data('icon');
+      var classes = option.attr('class');
+      if (icon_url) {
+        var classString = '';
+        if (classes) {
+          classString = ' class="' + classes + '"';
+        }
+        var listDOM = this._isMultiple ? '<li class="' + disabledClass + '">\n                      <img alt="" src="' + icon_url + '" ' + classString + '>\n                      <span class="filtrable">\n                        <input type="checkbox" ' + disabledClass + '/>\n                        <label></label>\n                        ' + option.html() + '\n                      </span>\n                    </li>' : '<li class="' + disabledClass + ' ' + optgroupClass + '">\n                      <img alt="" src="' + icon_url + '" ' + classString + '>\n                      <span class="filtrable">\n                        ' + option.html() + '\n                      </span>\n                    </li>';
+        this._customElement.append($(listDOM));
+        return true;
+      }
+
+      if (this._isMultiple) {
+        this._customElement.append($('<li class="' + disabledClass + '"><span class="filtrable"><input type="checkbox"' + disabledClass + '/><label></label>' + option.html() + '</span></li>'));
+      } else {
+        this._customElement.append($('<li class="' + disabledClass + optgroupClass + '"><span class="filtrable">' + option.html() + '</span></li>'));
+      }
+    };
+
+    Select.prototype._toggleEntryFromArray = function _toggleEntryFromArray(entriesArray, entryIndex, select) {
+      var index = entriesArray.indexOf(entryIndex),
+          notAdded = index === -1;
+
+      if (notAdded) {
+        entriesArray.push(entryIndex);
+      } else {
+        entriesArray.splice(index, 1);
+      }
+
+      select.siblings('ul.dropdown-menu').find('li:not(.optgroup)').eq(entryIndex).toggleClass('active');
+
+      select.find('option').eq(entryIndex).prop('selected', notAdded);
+      var value = '';
+
+      for (var i = 0, count = entriesArray.length; i < count; i++) {
+        var text = select.find('option').eq(entriesArray[i]).text();
+
+        i === 0 ? value += text : value += ', ' + text;
+      }
+
+      if (value === '') {
+        value = select.find('option:disabled').eq(0).text();
+      }
+
+      select.siblings('.dropdown').val(value);
+
+      return notAdded;
+    };
+
+    Select.prototype._guid = function _guid() {
+      function S4() {
+        return ((1 + Math.random()) * 0x10000 | 0).toString(16).substring(1);
+      }
+
+      return (S4() + S4() + "-" + S4() + "-4" + S4().substr(0, 3) + "-" + S4() + "-" + S4() + S4() + S4()).toLowerCase();
+    };
+
+    // static
+
+    Select._jQueryInterface = function _jQueryInterface(config) {
+      return this.each(function () {
+        var $this = $(this);
+        var data = $this.data(DATA_KEY);
+        var config = $.extend({}, Default, $this.data(), (typeof config === 'undefined' ? 'undefined' : _typeof(config)) === 'object' && config);
+
+        if (!data) $this.data(DATA_KEY, data = new Select(this, config));
+        if (typeof config === 'string') data[config].call($this);
+      });
+    };
+
+    return Select;
+  }();
+
+  /**
+   * ------------------------------------------------------------------------
+   * Data Api implementation
+   * ------------------------------------------------------------------------
+   */
+
+  $(window).on(Event.LOAD_DATA_API, function () {
+    var selects = $.makeArray($(Selector.SELECT));
+
+    for (var _i7 = selects.length; _i7--;) {
+      var $select = $(selects[_i7]);
+      Select._jQueryInterface.call($select, $select.data());
+    }
+  });
+
+  /**
+   * ------------------------------------------------------------------------
+   * jQuery
+   * ------------------------------------------------------------------------
+   */
+
+  $.fn[NAME] = Select._jQueryInterface;
+  $.fn[NAME].Constructor = Select;
+  $.fn[NAME].noConflict = function () {
+    $.fn[NAME] = JQUERY_NO_CONFLICT;
+    return Enter._jQueryInterface;
+  };
+
+  return Select;
+}(jQuery)
+
+/**
+ * Original code by Òscar Casajuana a.k.a. elboletaire <elboletaire at underave dot net>
+ * @link https://github.com/elboletaire/password-strength-meter
+ */
+;(function ($) {
+  'use strict';
+
+  var Password = function Password($object, options) {
+    var defaults = {
+      shortPass: 'password troppo debole',
+      badPass: 'password debole',
+      goodPass: 'password sicura',
+      strongPass: 'password molto sicura',
+      enterPass: 'inserisci almeno 8 caratteri e una lettera maiuscola',
+      showText: true,
+      minimumLength: 4
+    };
+
+    options = $.extend({}, defaults, options);
+
+    /**
+     * Returns strings based on the score given.
+     *
+     * @param int score Score base.
+     * @return string
+     */
+    function scoreText(score) {
+      if (score === -1) {
+        return options.shortPass;
+      }
+
+      score = score < 0 ? 0 : score;
+
+      if (score < 26) {
+        return options.shortPass;
+      }
+      if (score < 51) {
+        return options.badPass;
+      }
+      if (score < 76) {
+        return options.goodPass;
+      }
+
+      return options.strongPass;
+    }
+
+    function scoreColor(score) {
+      if (score === -1) {
+        return "danger";
+      }
+      if (score === -2) {
+        return "muted";
+      }
+
+      score = score < 0 ? 0 : score;
+
+      if (score < 26) {
+        return "danger";
+      }
+      if (score < 51) {
+        return "warning";
+      }
+      if (score < 76) {
+        return "success";
+      }
+
+      return "success";
+    }
+
+    /**
+     * Returns a value between -1 and 100 to score
+     * the user's password.
+     *
+     * @param  string password The password to be checked.
+     * @return int
+     */
+    function calculateScore(password) {
+      var score = 0;
+
+      // password < options.minimumLength
+      if (password.length < options.minimumLength) {
+        return -1;
+      }
+
+      // password length
+      score += password.length * 4;
+      score += checkRepetition(1, password).length - password.length;
+      score += checkRepetition(2, password).length - password.length;
+      score += checkRepetition(3, password).length - password.length;
+      score += checkRepetition(4, password).length - password.length;
+
+      // password has 3 numbers
+      if (password.match(/(.*[0-9].*[0-9].*[0-9])/)) {
+        score += 5;
+      }
+
+      // password has at least 2 sybols
+      var symbols = '.*[!,@,#,$,%,^,&,*,?,_,~]';
+      symbols = new RegExp('(' + symbols + symbols + ')');
+      if (password.match(symbols)) {
+        score += 5;
+      }
+
+      // password has Upper and Lower chars
+      if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) {
+        score += 10;
+      }
+
+      // password has number and chars
+      if (password.match(/([a-zA-Z])/) && password.match(/([0-9])/)) {
+        score += 15;
+      }
+
+      // password has number and symbol
+      if (password.match(/([!,@,#,$,%,^,&,*,?,_,~])/) && password.match(/([0-9])/)) {
+        score += 15;
+      }
+
+      // password has char and symbol
+      if (password.match(/([!,@,#,$,%,^,&,*,?,_,~])/) && password.match(/([a-zA-Z])/)) {
+        score += 15;
+      }
+
+      // password is just numbers or chars
+      if (password.match(/^\w+$/) || password.match(/^\d+$/)) {
+        score -= 10;
+      }
+
+      if (score > 100) {
+        score = 100;
+      }
+
+      if (score < 0) {
+        score = 0;
+      }
+
+      return score;
+    }
+
+    /**
+     * Checks for repetition of characters in
+     * a string
+     *
+     * @param int rLen Repetition length.
+     * @param string str The string to be checked.
+     * @return string
+     */
+    function checkRepetition(rLen, str) {
+      var res = "",
+          repeated = false;
+      for (var i = 0; i < str.length; i++) {
+        repeated = true;
+        for (var j = 0; j < rLen && j + i + rLen < str.length; j++) {
+          repeated = repeated && str.charAt(j + i) === str.charAt(j + i + rLen);
+        }
+        if (j < rLen) {
+          repeated = false;
+        }
+        if (repeated) {
+          i += rLen - 1;
+          repeated = false;
+        } else {
+          res += str.charAt(i);
+        }
+      }
+      return res;
+    }
+
+    /**
+     * Initializes the plugin creating and binding the
+     * required layers and events.
+     *
+     * @return void
+     */
+    function init() {
+      var shown = true;
+      var $text = options.showText;
+
+      var $graybar = $('<div>').addClass('progress rounded-0 position-relative psw-meter');
+      $graybar.append('<div class="row position-absolute w-100 m-0">\n        <div class="col-3 border-left border-right border-white"></div>\n        <div class="col-3 border-left border-right border-white"></div>\n        <div class="col-3 border-left border-right border-white"></div>\n        <div class="col-3 border-left border-right border-white"></div>\n      </div>');
+      var $colorbar = $('<div>').attr({
+        class: "progress-bar",
+        role: "progressbar",
+        'aria-valuenow': "0",
+        'aria-valuemin': "0",
+        'aria-valuemax': "100"
+      });
+      var $insert = $('<div>').addClass('psw-wrapper').append($graybar.append($colorbar));
+
+      if (options.showText) {
+        $text = $('<span>').addClass('psw-text').html(options.enterPass);
+        $insert.prepend($text);
+      }
+
+      $object.after($insert);
+
+      $object.keyup(function () {
+        var score = calculateScore($object.val());
+        $object.trigger('password.score', [score]);
+        var perc = score < 0 ? 0 : score;
+        $colorbar.removeClass(function (index, className) {
+          return (className.match(/(^|\s)bg-\S+/g) || []).join(' ');
+        });
+        $colorbar.addClass("bg-" + scoreColor(score));
+        $colorbar.css({
+          width: perc + '%'
+        });
+        $colorbar.attr('aria-valuenow', perc);
+
+        if (options.showText) {
+          var text = scoreText(score);
+          if (!$object.val().length && score <= 0) {
+            text = options.enterPass;
+          }
+
+          if ($text.html() !== $('<div>').html(text).html()) {
+            $text.html(text);
+            $text.removeClass(function (index, className) {
+              return (className.match(/(^|\s)text-\S+/g) || []).join(' ');
+            });
+            $text.addClass("text-" + scoreColor(score));
+            $object.trigger('password.text', [text, score]);
+          }
+        }
+      });
+
+      return this;
+    }
+
+    return init.call(this);
+  };
+
+  // Bind to jquery
+  $.fn.password = function (options) {
+    return this.each(function () {
+      new Password($(this), options);
+    });
+  };
+})(jQuery);
+
+// Gestione Password Caps Lock
+function msgCapsLock(obj) {
+  $("small#capslock").remove();
+  $(obj).after('<small id="capslock" class="form-text text-warning position-absolute bg-white w-100">CAPS LOCK inserito</small>');
+}
+$(function () {
+  var isShiftPressed = false;
+  var isCapsOn = null;
+  $("input[type=password]").bind("keydown", function (e) {
+    var keyCode = e.keyCode ? e.keyCode : e.which;
+    if (keyCode == 16) {
+      isShiftPressed = true;
+    }
+  });
+  $("input[type=password]").bind("keyup", function (e) {
+    var keyCode = e.keyCode ? e.keyCode : e.which;
+    if (keyCode == 16) {
+      isShiftPressed = false;
+    }
+    if (keyCode == 20) {
+      if (isCapsOn == true) {
+        isCapsOn = false;
+        $("small#capslock").remove();
+      } else if (isCapsOn == false) {
+        isCapsOn = true;
+        $("input:focus").each(function (e) {
+          msgCapsLock($(this));
+        });
+      }
+    }
+  });
+  $("input[type=password]").bind("keypress", function (e) {
+    var keyCode = e.keyCode ? e.keyCode : e.which;
+    // i keyCode dal 65 al 90 identificano i caratteri alfabetici maiuscoli da "A" a "Z"
+    if (keyCode >= 65 && keyCode <= 90 && !isShiftPressed) {
+      isCapsOn = true;
+      msgCapsLock($(this));
+    }
+  });
+});
+
+// Gestione Password Strength Meter
+$(function () {
+  $('.form-password').password();
+});
+
+// Gestione Visibilità Password
+$(function () {
+  $("input:password").each(function (e) {
+    $(this).after('<span class="btn-eye eye-on" toggle="' + $(this).attr("id") + '"></span>');
+  });
+
+  $(".btn-eye").on("click", function () {
+    $(this).toggleClass("eye-off");
+    var input = $("#" + $(this).attr("toggle"));
+    input.focus();
+    if (input.attr("type") == "password") {
+      input.attr("type", "text");
+    } else {
+      input.attr("type", "password");
+    }
+  });
+});
+
+$(function () {
+  'use strict';
+
+  $('[data-toggle="offcanvas"]').on('click', function () {
+    $('.offcanvas-collapse').toggleClass('open');
+  });
+});
+
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap (v4.0.0): DatePicker.js
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * --------------------------------------------------------------------------
+ */
+
+var DatePicker = function ($) {
+
+  /**
+   * ------------------------------------------------------------------------
+   * Constants
+   * ------------------------------------------------------------------------
+   */
+
+  var NAME = 'datePicker';
+  var DATA_KEY = 'bs.date-picker';
+  var VERSION = 'v4.0.0';
+  var DATA_API_TIME = '[data-action="timepicker"]';
+  var DATA_API_DATE = '[data-action="datepicker"]';
+  var EVENT_KEY = '.' + DATA_KEY;
+  var DATA_API_KEY = '.data-api';
+  var JQUERY_NO_CONFLICT = $.fn[NAME];
+
+  /**
+   * ------------------------------------------------------------------------
+   * Class Definition
+   * ------------------------------------------------------------------------
+   */
+
+  var DatePicker = function () {
+    function DatePicker(element) {
+      _classCallCheck(this, DatePicker);
+
+      this._element = element;
+    }
+
+    // Getters
+
+    // static
+
+    DatePicker._jQueryInterface = function _jQueryInterface(config) {
+      return this.each(function () {
+        var $element = $(this);
+        var data = $element.data(DATA_KEY);
+
+        if (!data) {
+          data = new DatePicker(this);
+          $element.data(DATA_KEY, data);
+        }
+
+        if (typeof config === 'string') {
+          if (typeof data[config] === 'undefined') {
+            throw new TypeError('No method named "' + config + '"');
+          }
+          data[config](this);
+        }
+      });
+    };
+
+    _createClass(DatePicker, null, [{
+      key: 'VERSION',
+      get: function get() {
+        return VERSION;
+      }
+    }]);
+
+    return DatePicker;
+  }();
+
+  /**
+   * ------------------------------------------------------------------------
+   * Data Api implementation
+   * ------------------------------------------------------------------------
+   */
+
+  $(function () {
+
+    // Italian
+
+    jQuery.extend(jQuery.fn.pickadate.defaults, {
+      monthsFull: ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'],
+      monthsShort: ['gen', 'feb', 'mar', 'apr', 'mag', 'giu', 'lug', 'ago', 'set', 'ott', 'nov', 'dic'],
+      weekdaysFull: ['domenica', 'lunedì', 'martedì', 'mercoledì', 'giovedì', 'venerdì', 'sabato'],
+      weekdaysShort: ['dom', 'lun', 'mar', 'mer', 'gio', 'ven', 'sab'],
+      today: 'Oggi',
+      clear: 'Cancella',
+      close: 'Chiudi',
+      firstDay: 1,
+      format: 'dddd d mmmm yyyy',
+      formatSubmit: 'yyyy/mm/dd',
+      labelMonthNext: 'Mese successivo',
+      labelMonthPrev: 'Mese precedente',
+      labelMonthSelect: 'Seleziona un mese',
+      labelYearSelect: 'Seleziona un anno'
+    });
+
+    jQuery.extend(jQuery.fn.pickatime.defaults, {
+      clear: 'Cancella',
+      format: 'HH:i',
+      formatSubmit: 'HH:i'
+    });
+
+    $(DATA_API_DATE).pickadate();
+
+    $(DATA_API_TIME).pickatime();
+  });
+
+  /**
+   * ------------------------------------------------------------------------
+   * jQuery
+   * ------------------------------------------------------------------------
+   */
+
+  $.fn[NAME] = DatePicker._jQueryInterface;
+  $.fn[NAME].Constructor = DatePicker;
+  $.fn[NAME].noConflict = function () {
+    $.fn[NAME] = JQUERY_NO_CONFLICT;
+    return DatePicker._jQueryInterface;
+  };
+
+  return DatePicker;
+}($);
+
+// ===== Scroll to Top ====
+$(window).on('scroll', function () {
+  if ($(this).scrollTop() >= 50) {
+    $('a[data-attribute*="return-to-top"]').fadeIn(200);
+  } else {
+    $('a[data-attribute*="return-to-top"]').fadeOut(200);
+  }
+});
+
+$('a[data-attribute*="return-to-top"]').on('click', function () {
+  $('body,html').animate({
+    scrollTop: 0
+  }, 500);
+});
+
+// ===== Forward ====
+$('a[data-attribute*="forward"]').on('click', function (event) {
+  var target = $(this.hash);
+  if (target.length) {
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: target.offset().top
+    }, 500);
+  }
+});
+
+console.log("bootstrap italia");
 }();

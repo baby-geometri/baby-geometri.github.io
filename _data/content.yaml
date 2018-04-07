@@ -49,8 +49,7 @@ archivio:
   
 following:
   title: "A seguire"
-  text: "<p> I prossimi seminari saranno...</p>"
-  prova: "<p>vediamo un po</p>"
+  text: "<p> I seminari si tengono in genere al Dipartimento di Matematica di Pisa in aula seminari/riunioni (al primo piano). Tuttavia può capitare che alcuni seminari si svolgano nel Polo Fibonacci. </p>"
   
 participate:
   title: "Partecipa!"

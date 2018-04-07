@@ -1,24 +1,26 @@
-- nome: "Mario Bianchi"
-  titolo: "Gruppi di Lie"
-  data: "17 aprile"
+- nome: "Gabriele Viaggi"
+  titolo: Introduzione alla norma di Thurston
+  data: "26 marzo"
   luogo: "aula riunioni"
   ora: "16.30"
-  abstract: "bla bla un abstract bellissimo"
-- nome: "Mario Verdi"
-  titolo: "Gruppi di Lie2"
-  data: "17 aprile"
-  luogo: "aula riunioni"
+  abstract: "we"
+- nome: "José Manuel Moreno-Fernández"
+  titolo: Infinity structures and higher products in rational homotopy theory
+  data: "9 aprile"
+  luogo: "aula seminari"
   ora: "16.30"
-  abstract: "bla bla un abstract bellissimo"
-- nome: "Mario mari"
-  titolo: "Gruppi di Lie3"
-  data: "17 aprile"
+  abstract: "pp"
+- nome: "David Méndez"
+  titolo: Realising groups as self-homotopy equivalences of \(A_n^2\)-polyhedra
+  data: "10 aprile"
   luogo: "aula riunioni"
-  ora: "16.30"
-  abstract: "bla bla un abstract bellissimo"
+  ora: "09.30"
+  abstract: ssssssssssssRealising groups as self-homotopy
+   equivalences of A_n^2-polyhedra 
 - nome: "Mario blu"
-  titolo: "Gruppi di Lie4"
+  titolo: Gruppi di Lie4
   data: "17 aprile"
   luogo: "aula riunioni"
   ora: "16.30"
   abstract: "bla bla un abstract bellissimo"
+
