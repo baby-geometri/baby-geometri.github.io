@@ -35,7 +35,7 @@
         </div>
       </div>
     </header>
-    <section id="whitepaper">
+    <section id="whitepaper" class="bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -84,9 +84,25 @@
     </div>
   </div>
   <div id="abstractTable">
+    <div class="card" style="background-color: transparent; border:0;">
+      <div class="card-header row align-items-center">
+        <div class="col-sm-1 h5">
+          Data
+        </div>
+        <div class="col-sm-1 h5">
+        Ora
+        </div>
+        <div class="col h5">
+          Titolo
+        </div>
+        <div class="col-sm-3 h5">
+          Speaker
+        </div>
+      </div>
+    </div>
     {% for nav_item in site.data.futuri %}
     <!--     <div class="row"> -->
-    <div class="card" style="background-color: transparent; border:0;">
+    <div class="card" style="background-color: transparent;  border:0;">
       <div class="card-header row align-items-center">
         <div class="col-sm-1 align-middle" style="height:100%; text-align: left;">
           {{ nav_item.data }}
@@ -95,7 +111,7 @@
         {{ nav_item.ora }}
         </div>
         <div class="col">
-          <button class="btn btn-link" class="collapsed" data-toggle="collapse"
+          <button class="btn btn-link text-white" class="collapsed" data-toggle="collapse"
             data-target="#abs{{ nav_item.nome }}" data-parent="#abstractTable" >
             {{ nav_item.titolo }}
 
@@ -107,7 +123,7 @@
         </div>
       </div>
       <div class="col-sm-12 text-center collapse" id="abs{{ nav_item.nome }}">
-        <div class="card-body">
+        <div class="card-body" style=" border:0;">
           {{ nav_item.abstract }}
         </div>
       </div>
