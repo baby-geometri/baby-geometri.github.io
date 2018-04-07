@@ -4,7 +4,7 @@
     {% include head.html %}
   </head>
   <body id="page-top">
-    {% include nav.html %} 
+    {% include nav.html %}
     <header class="masthead text-center text-white d-flex">
       <div class="container my-auto">
         <div class="row">
@@ -20,7 +20,7 @@
           <div class="col-lg-8">
             <ul class="nav nav-pills nav-fill">
               {% for nav_item in site.data.nav-main %}
-              <li class="nav-item">	   
+              <li class="nav-item">
                 <a class="nav-link btn btn-outline-light js-scroll-trigger" href="{{ nav_item.url }}">
                 {{ nav_item.title }}   </a>
               </li>
@@ -30,7 +30,7 @@
             <hr>
             <a class="btn btn-warning btn-xl js-scroll-trigger" href="#whitepaper">Coming up</a>
           </div>
-          
+
           <div class="col-lg-2"></div>
         </div>
       </div>
@@ -52,81 +52,83 @@
             <li> <i class="far fa-clock"></i>  {{ site.data.content.whitepaper.time }} </li>
             <li> <i class="fas fa-map-marker"></i> {{ site.data.content.whitepaper.where }} </li>
           </ul>
-          
+
           <div class="col-lg-3"></div>
         </div>
       </div>
       <div class="container">
         <div class="row">
-        
+
           <div class="col-lg-3"></div>
           <div class="col-lg-6 mx-auto text-center">
             <button class="btn btn-warning" type="button" data-toggle="collapse"
               data-target="#whitepaperAbstract" aria-expanded="false" aria-controls="whitepaperAbstract">
             Abstract
-            </button> 
+            </button>
             <div class="collapse" id="whitepaperAbstract">
               <div class="card card-body">
                 {{ site.data.content.whitepaper.abstract }}
               </div>
             </div>
           </div>
-          <div class="col-lg-3 mx-auto"> 
+          <div class="col-lg-3 mx-auto">
           </div>
         </div>
       </div>
     </section>
     <section class="bg-warning" id="following">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">{{ site.data.content.following.title }} </h2>
-            <table class="table table-hover">
-              <thead>
-                <tr>
-                  <th> <span class="glyphicon glyphicon-calendar"></span> </th>
-                  <th><span class="glyphicon glyphicon-time"></span> </th>
-                  <th>Titolo</th>
-                  <th>Speaker</th>
-                </tr>
-              </thead>
-              <tbody>
-                {% for nav_item in site.data.futuri %}
-                <tr data-toggle="collapse" 
-                  data-target="#abs{{ nav_item.nome }}"
-                  aria-expanded="false" 
-                  aria-controls="abs{{ nav_item.nome }}" 
-                  >
-                  <td>{{ nav_item.data }} </td>
-                  <td>{{ nav_item.ora }} </td>
-                  <td>{{ nav_item.titolo }} </td>
-                  <td>{{ nav_item.nome }} </td>
-                </tr>
-                <tr class="collapse accordion-body" id="abs{{ nav_item.nome }}">
-                  <td colspan="4">
-                    {{ nav_item.abstract }}
-                  </td>
-                </tr>
-                {% endfor %}
-              </tbody>
-            </table>
-            <!-- table .collapse.in {
-              display: table-row !important;
-              } ADD TO CSS --> 
-            <hr class="light my-4">
-            {{ site.data.content.following.text }} 
-          </div>
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h2 class="section-heading">{{ site.data.content.following.title }} </h2>
+    </div>
+  </div>
+  <div id="abstractTable">
+    {% for nav_item in site.data.futuri %}
+    <!--     <div class="row"> -->
+    <div class="card" style="background-color: transparent; border:0;">
+      <div class="card-header row align-items-center">
+        <div class="col-sm-1 align-middle" style="height:100%; text-align: left;">
+          {{ nav_item.data }}
+        </div>
+        <div class="col-sm-1 align-middle" style="height:100%; text-align: left;">
+        {{ nav_item.ora }}
+        </div>
+        <div class="col">
+          <button class="btn btn-link" class="collapsed" data-toggle="collapse"
+            data-target="#abs{{ nav_item.nome }}" data-parent="#abstractTable" >
+            {{ nav_item.titolo }}
+
+          <i class="fas fa-chevron-circle-down"></i>
+          </button>
+        </div>
+        <div class="col-sm-3">
+          {{ nav_item.nome }}
         </div>
       </div>
-    </section>
+      <div class="col-sm-12 text-center collapse" id="abs{{ nav_item.nome }}">
+        <div class="card-body">
+          {{ nav_item.abstract }}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    <hr class="light my-4" />
+    <div class="row">
+      {{ site.data.content.following.text }}
+    </div>
+  </div>
+</section>
     <section class="bg-light" id="archivio">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8 text-center">
             <h2 class="section-heading">{{ site.data.content.archivio.title }} </h2>
             <hr class="warning my-4">
             {{ site.data.content.archivio.text }}
           </div>
+          <div class="col-lg-2"></div>
         </div>
         <div class="col-lg-12 mx-auto text-center">
           <a class="btn btn-warning btn-xl mt-5 js-scroll-trigger" href="./prova.html"> 2017/18 </a>
@@ -140,24 +142,28 @@
     <section class="bg-warning" id="chisiamo">
       <div class="container">
       <div class="row">
-      <div class="col-lg-12 text-center">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8 text-center">
         <h2 class="section-heading">{{ site.data.content.chisiamo.title }}</h2>
         <hr class="light my-4">
         {{ site.data.content.chisiamo.text }}
         </ul>
       </div>
+
+    <div class="col-lg-2"></div>
       <div class="card-deck">
         <div class="card text-center col-lg-4">
-          <img class="card-img-top" src="img/giulio.jpeg">
           <div class="card-body">
-          <img src="holder.js/200x200" class="rounded-circle" />
-            <a href="http://people.dm.unipi.it/moraschini/" class="btn btn-primary">Giulio</a> 
-            <p class="card-text">Studente di Martelli. Mi piacciono i disegni e le sommatorie</p>
+          <img src="img/giulio.jpeg" class="mb-4 rounded-circle mx-auto d-block" style="width:100%;" />
+            <h5 class="card-title">Marco</h5>
+<p class="card-text">Studente di Martelli. Mi piacciono i disegni e le sommatorie</p>
+
+            <a href="http://people.dm.unipi.it/moraschini/" class="btn btn-primary">Giulio</a>
           </div>
         </div>
         <div class="card text-center col-lg-4">
           <div class="card-body">
-          <img src="holder.js/400x400" class="img-fluid rounded" style="height: auto; max-width: 100%;"/>
+          <img src="http://via.placeholder.com/500x500" class="mb-4 rounded-circle mx-auto d-block" style="width:100%;" />
             <h5 class="card-title">Marco</h5>
             <p class="card-text">Studente di Martelli. Mi piaccion i disegni e le sommatorie</p>
             <a href="http://people.dm.unipi.it/moraschini/" class="btn btn-primary">Contattami!</a>
@@ -165,7 +171,7 @@
         </div>
         <div class="card text-center col-lg-4">
           <div class="card-body">
-          <img src="holder.js/200x200" class="img-fluid rounded" />
+          <img src="http://via.placeholder.com/500x500" class="mb-4 rounded-circle mx-auto d-block" style="width:100%;" />
             <h5 class="card-title">Edoardo</h5>
             <p class="card-text">Studente di Martelli. Mi piaccionoo i disegni e le sommatorie</p>
             <a href="https://it.wikipedia.org/wiki/Usmate_Velate" class="btn btn-primary">Best Place</a>
