@@ -1,0 +1,12 @@
+---
+layout: page
+---
+
+Ciao dal layout
+
+{% assign seminars = site.seminars %}
+
+{% for sem in seminars %}
+Trovato 1 seminario
+      {{sem.title}}
+{% endfor %}
