@@ -35,6 +35,7 @@
         </div>
       </div>
     </header>
+
 <section class="bg-light" id="whitepaper" >
       <div class="container">
         <div class="row">
@@ -79,6 +80,7 @@
         </div>
       </div>
     </section>
+
 <section class="bg-warning" id="following">
   <div class="container">
   <div class="row">
@@ -138,6 +140,7 @@
     </div>
   </div>
 </section>
+
 <section class="bg-light" id="archivio">
       <div class="container">
         <div class="row">
@@ -158,6 +161,7 @@
         </div>
       </div>
     </section>
+
 <section class="bg-warning" id="chisiamo">
       <div class="container">
       <div class="row">
@@ -175,7 +179,7 @@
           <div class="card-body">
           <img src="img/giulio.jpeg" height="275" width="275" class="mb-4 rounded-circle mx-auto d-block" style="width:100%;" />
             <h5 class="card-title">Giulio</h5>
-            <p class="card-text">Studente di Martelli. Invarianti quantum e 3-varietà.</p>
+            <p class="card-text">Studente di Martelli. Invarianti quantistici e 3-varietà.</p>
 
             <a href="https://www.sns.it/ugov/persone/giulio-belletti" class="btn btn-primary">Contattami!</a>
           </div>
@@ -198,35 +202,42 @@
         </div>
       </div>
     </section>
+
 <section class="bg-light" id="participate">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading">{{ site.data.content.participate.title }}</h2>
             <hr class="my-4">
-            <ul>
-              {% for points in site.data.content.participate.collaboration-list %}
-              <li class="mb-4">{{ points.point }}</p>
-                {% endfor %}
-            </ul>
+
+            <p>{{ site.data.content.participate.text }}</p>
+
+            <i class="far fa-envelope"></i>   <a href="mailto:{{ site.data.content.participate.email }}">{{ site.data.content.participate.email }}</a>
+
           </div>
         </div>
       </div>
+      <br>
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <p>{{ site.data.content.participate.phone }}</p>
+          <div class="col-lg-3"></div>
+          <div class="col-lg-6 ml-auto text-center">
+            <h3> Credits </h3>
+            <hr class="my-4">
+
+            Ringraziamo il <a href="https://teamdigitale.governo.it/it/47-content.htm">Team per la Trasformazione Digitale</a> e tutto il gruppo di <a href="https://italia.github.io/bootstrap-italia/">Boostrap Italia</a>
+ per il codice di base. In particolare, grazie a <a href="https://teamdigitale.governo.it/it/people/riccardo-iaconelli.html">Riccardo</a> per l'aiuto!
           </div>
-          <div class="col-lg-4 mr-auto text-center">
-          <i class="far fa-envelope"></i>
-            <p>
-              <a href="mailto:{{ site.data.content.participate.email }}">{{ site.data.content.participate.email }}</a>
-            </p>
-          </div>
+          <div class="col-lg-3"></div>
         </div>
+
+
+
+
       </div>
     </section>
     {% include footer.html %}
     {% include scripts.html %}
   </body>
+
 </html>

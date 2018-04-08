@@ -42,7 +42,7 @@ following:
 
 participate:
   title: "Partecipa!"
-  text: "Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Pellentesque habitant morbi tristique senectus et netus. Quam temere in vitiis, legem sancimus haerentia. Quis aute iure reprehenderit in voluptate velit esse. At nos hinc posthac, sitientis piros Afros."
+  text: "Vuoi venire a Pisa a fare un seminario? Studi a Pisa e vuoi diventare un organizzatore dei Baby Geometri? Scrivici!"
   collaboration-list:
     - point: "Mandaci il tuo seminario"
     - point: "Candidati come HUB locale sia come individuo che come organizzazione"
@@ -50,4 +50,4 @@ participate:
   phone:  +00 000 000 000
   email:   babygeometri&#8855cs.dm.unipi.it
 footer:
-  text: "<p>I am the footer <a href=\"../../\">blih</a>.</p>"
+  text: <a href="https://www.google.it/maps/place/Universit%C3%A0+di+Pisa+Dipartimento+di+Matematica/@43.7197064,10.4053485,17z/data=!3m1!4b1!4m5!3m4!1s0x12d591bc9516b873:0x3cd55ad2e1a52d2d!8m2!3d43.7197064!4d10.4075372/">Dove siamo</a>
