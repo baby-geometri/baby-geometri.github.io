@@ -7,3 +7,5 @@ title: Prova di pagina
 ---
 
 Ciao!
+
+{{ site.data.content.chisiamo.text }}
