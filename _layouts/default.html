@@ -5,7 +5,7 @@
   </head>
   <body id="page-top">
     {% include nav.html %}
-    <header class="masthead text-center text-white d-flex">
+<header class="masthead text-center text-white d-flex">
       <div class="container my-auto">
         <div class="row">
           <div class="col-lg-12 mx-auto">
@@ -35,22 +35,25 @@
         </div>
       </div>
     </header>
-    <section id="whitepaper" class="bg-light">
+<section class="bg-light" id="whitepaper" >
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <!-- <img src="holder.js/200x200" class="rounded-circle" /> -->
-            <h2 class="section-heading">{{ site.data.content.whitepaper.title }}</h2>
+            <!-- {{ site.data.content.following.title }} -->
+            <!-- site.data.futuri -->
+            <h2 class="section-heading">{{ site.data.content.whitepaper.titolo }}</h2>
             <hr class="my-4">
             <h3>
-            <p>{{ site.data.content.whitepaper.speaker }} ({{ site.data.content.whitepaper.provenienza }})</p>
+            <p>{{ site.data.content.whitepaper.nome }}</p>
+              <p> ({{ site.data.content.whitepaper.provenienza }})</p>
             </h3>
           </div>
           <div class="col-lg-3"></div>
           <ul class="col-lg-6" style="list-style-type:none">
-            <li> <i class="far fa-calendar-alt"></i> {{ site.data.content.whitepaper.when }} </li>
-            <li> <i class="far fa-clock"></i>  {{ site.data.content.whitepaper.time }} </li>
-            <li> <i class="fas fa-map-marker"></i> {{ site.data.content.whitepaper.where }} </li>
+            <li> <i class="far fa-calendar-alt"></i> {{ site.data.content.whitepaper.data }} </li>
+            <li> <i class="far fa-clock"></i>  {{ site.data.content.whitepaper.ora }} </li>
+            <li> <i class="fas fa-map-marker"></i> {{ site.data.content.whitepaper.luogo }} </li>
           </ul>
 
           <div class="col-lg-3"></div>
@@ -76,7 +79,7 @@
         </div>
       </div>
     </section>
-    <section class="bg-warning" id="following">
+<section class="bg-warning" id="following">
   <div class="container">
   <div class="row">
     <div class="col-lg-12 text-center">
@@ -118,8 +121,8 @@
           <!-- <i class="fas fa-chevron-circle-down"></i> -->
           </button>
         </div>
-        <div class="col-sm-2">
-          {{ nav_item.nome }}
+        <div class="col-sm-3">
+          {{ nav_item.nome }} ({{ nav_item.provenienza }})
         </div>
       </div>
       <div class="col-sm-12 text-center collapse" id="abs{{ nav_item.nome }}">
@@ -135,7 +138,7 @@
     </div>
   </div>
 </section>
-    <section class="bg-light" id="archivio">
+<section class="bg-light" id="archivio">
       <div class="container">
         <div class="row">
           <div class="col-lg-2"></div>
@@ -155,7 +158,7 @@
         </div>
       </div>
     </section>
-    <section class="bg-warning" id="chisiamo">
+<section class="bg-warning" id="chisiamo">
       <div class="container">
       <div class="row">
       <div class="col-lg-2"></div>
@@ -166,36 +169,36 @@
         </ul>
       </div>
 
-    <div class="col-lg-2"></div>
+      <div class="col-lg-2"></div>
       <div class="card-deck">
         <div class="card text-center col-lg-4">
           <div class="card-body">
-          <img src="img/giulio.jpeg" class="mb-4 rounded-circle mx-auto d-block" style="width:100%;" />
-            <h5 class="card-title">Marco</h5>
-<p class="card-text">Studente di Martelli. Mi piacciono i disegni e le sommatorie</p>
+          <img src="img/giulio.jpeg" height="275" width="275" class="mb-4 rounded-circle mx-auto d-block" style="width:100%;" />
+            <h5 class="card-title">Giulio</h5>
+            <p class="card-text">Studente di Martelli. Invarianti quantum e 3-varietà</p>
 
-            <a href="http://people.dm.unipi.it/moraschini/" class="btn btn-primary">Giulio</a>
+            <a href="https://www.sns.it/ugov/persone/giulio-belletti" class="btn btn-primary">Contattami!</a>
           </div>
         </div>
         <div class="card text-center col-lg-4">
           <div class="card-body">
-          <img src="http://via.placeholder.com/500x500" class="mb-4 rounded-circle mx-auto d-block" style="width:100%;" />
+          <img src="img/marco.jpeg" height="275" width="275" class="mb-4 rounded-circle mx-auto d-block" style="width:100%;" />
             <h5 class="card-title">Marco</h5>
-            <p class="card-text">Studente di Martelli. Mi piaccion i disegni e le sommatorie</p>
+            <p class="card-text">Studente di Frigerio. Volume simpliciale e geometria iperbolica</p>
             <a href="http://people.dm.unipi.it/moraschini/" class="btn btn-primary">Contattami!</a>
           </div>
         </div>
         <div class="card text-center col-lg-4">
           <div class="card-body">
-          <img src="http://via.placeholder.com/500x500" class="mb-4 rounded-circle mx-auto d-block" style="width:100%;" />
+          <img src="img/edoardo.jpg" height="275" width="275" class="mb-4 rounded-circle mx-auto d-block" style="width:100%;" />
             <h5 class="card-title">Edoardo</h5>
-            <p class="card-text">Studente di Martelli. Mi piaccionoo i disegni e le sommatorie</p>
-            <a href="https://it.wikipedia.org/wiki/Usmate_Velate" class="btn btn-primary">Best Place</a>
+            <p class="card-text">Studente di Lisca. Fibrazioni di Lefschetz e riempimenti simplettici</p>
+            <a href="https://www.sns.it/ugov/persone/edoardo-fossati" class="btn btn-primary">Contattami!</a>
           </div>
         </div>
       </div>
     </section>
-    <section class="bg-light" id="participate">
+<section class="bg-light" id="participate">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">

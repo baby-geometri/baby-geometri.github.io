@@ -1,26 +1,35 @@
-- nome: "Gabriele Viaggi"
-  titolo: Introduzione alla norma di Thurston
-  data: "26 marzo"
-  luogo: "aula riunioni"
-  ora: "16.30"
-  abstract: "we"
 - nome: "José Manuel Moreno-Fernández"
+  provenienza: Universidad de Malaga
   titolo: Infinity structures and higher products in rational homotopy theory
   data: "9 aprile"
   luogo: "aula seminari"
   ora: "16.30"
-  abstract: "pp"
+  abstract: The goal of this talk is to understand how \(L\)-infinity structures on the rational homotopy groups of a simply connected space behave with respect to the higher Whitehead products. To do so, I will give a self-contained introduction to the relevant facts of rational homotopy theory, via examples, computations and intuition. If time permits, I will sketch how cohomology algebras over a field, endowed with an \(A\)-infinity algebra structure, behave with respect to the higher Massey products. I will make the talk accessible for attendants with diverse backgrounds and minimal prerequisites, with interests in algebraic topology or homotopy theory broadly understood.
 - nome: "David Méndez"
+  provenienza: Universidad de Malaga
   titolo: Realising groups as self-homotopy equivalences of \(A_n^2\)-polyhedra
   data: "10 aprile"
   luogo: "aula riunioni"
   ora: "09.30"
-  abstract: ssssssssssssRealising groups as self-homotopy
-   equivalences of A_n^2-polyhedra 
-- nome: "Mario blu"
-  titolo: Gruppi di Lie4
-  data: "17 aprile"
-  luogo: "aula riunioni"
-  ora: "16.30"
-  abstract: "bla bla un abstract bellissimo"
-
+  abstract: In the fifties, Whitehead introduced a long exact sequence of abelian groups associated to simply connected spaces. He showed that these exact sequences could be used to classify homotopy types of simply-connected 4-dimensional topological spaces. More recently, Benkhalifa made use of these results to algebraically study in this context the group of self-homotopy equivalences of a space (homotopy clases of continuous self-maps of the space that have a homotopy inverse). In this talk we introduce in detail this algebraic framework and show through some simple examples how these results can be used to study the group of self-homotopy equivalences in this context. I aim for this talk to be accessible to a broad audience with different backgrounds.
+- nome: "Erika Pieroni"
+  provenienza: Università della Sapienza, Roma
+  titolo: Entropia minimale di 3-varietà
+  data: "TBA"
+  luogo: "TBA"
+  ora: "TBA"
+  abstract: In questo seminario introdurremo la nozione di entropia minimale di una varietà. Proseguiremo calcolando l’entropia minimale di una qualsiasi 3-varietà orientabile, a partire dal dato della sua scomposizione in primi e della scomposizione JSJ di ogni componente irriducibile; in particolare, dimostreremo che l’entropia minimale è additiva rispetto ad entrambe le scomposizioni. Questo calcolo verrà effettuato tramite la costruzione esplicita di una successione di metriche sulla varietà, che a posteriori dimostreremo essere minimizzante (utilizzando il metodo del baricentro adattato a questo contesto). Questo lavoro è parte della mia tesi di dottorato.
+- nome: "Filippo Cerocchi"
+  provenienza: Università della Sapienza, Roma
+  titolo: Scomposizioni acilindriche\(:\) esempi geometrici e proprietà di crescita
+  data: "TBA"
+  luogo: "TBA"
+  ora: "TBA"
+  abstract: Ricorderemo la nozione di scomposizione acilindrica di un gruppo discreto. Forniremo una serie di esempi e di criteri (rilevanti dal punto di vista topologico e geometrico) che garantiscano l'esistenza di tali scomposizioni. Enunceremo e giustificheremo una versione quantitativa del teorema di sotto(semi)gruppo libero e ne spiegheremo la rilevanza ai fini dello studio delle varietà Riemanniane di entropia e diametro limitati.
+- nome: "Viktória Földvári"
+  provenienza: Elte University, Budapest
+  titolo: Introduction to Legendrian 2-bridge knots
+  data: "26 aprile"
+  luogo: "TBA"
+  ora: "TBA"
+  abstract: TBA

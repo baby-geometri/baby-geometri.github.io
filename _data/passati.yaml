@@ -1,0 +1,71 @@
+- nome: "David Méndez"
+  provenienza: Universidad de Malaga
+  titolo: Realising groups as self-homotopy equivalences of \(A_n^2\)-polyhedra
+  data: "10 aprile"
+  luogo: "aula riunioni"
+  ora: "09.30"
+  abstract: In the fifties, Whitehead introduced a long exact sequence of abelian groups associated to simply connected spaces. He showed that these exact sequences could be used to classify homotopy types of simply-connected 4-dimensional topological spaces. More recently, Benkhalifa made use of these results to algebraically study in this context the group of self-homotopy equivalences of a space (homotopy clases of continuous self-maps of the space that have a homotopy inverse). In this talk we introduce in detail this algebraic framework and show through some simple examples how these results can be used to study the group of self-homotopy equivalences in this context. I aim for this talk to be accessible to a broad audience with different backgrounds.
+- nome: "José Manuel Moreno-Fernández"
+  provenienza: Universidad de Malaga
+  titolo: Infinity structures and higher products in rational homotopy theory
+  data: "9 aprile"
+  luogo: "aula seminari"
+  ora: "16.30"
+  abstract: The goal of this talk is to understand how \(L\)-infinity structures on the rational homotopy groups of a simply connected space behave with respect to the higher Whitehead products. To do so, I will give a self-contained introduction to the relevant facts of rational homotopy theory, via examples, computations and intuition. If time permits, I will sketch how cohomology algebras over a field, endowed with an \(A\)-infinity algebra structure, behave with respect to the higher Massey products. I will make the talk accessible for attendants with diverse backgrounds and minimal prerequisites, with interests in algebraic topology or homotopy theory broadly understood.
+- nome: "Gabriele Viaggi"
+  provenienza: Bonn University
+  titolo: Introduzione alla norma di Thurston
+  data: "26 marzo"
+  luogo: "aula riunioni"
+  ora: "16.30"
+  abstract: La norma di Thurston é una norma definita sull'omologia di una 3-varietà \(M\) e descrive la complessità delle superfici contenute nella varietà. Al pari di ogni norma su uno spazio euclideo, anche la norma di Thurston é descritta dalla sua palla unitaria, in generale un corpo convesso simmetrico, in questo caso particolare un politopo finito. Come scoperto da Thurston, alcune facce di questo politopo organizzano i modi in cui \(M\) può essere descritta come una fibrazione su \(S^1\). Scopo del seminario é un'introduzione a questi oggetti seguendo da vicino l'articolo originale di Thurston. Tempo permettendo discuteremo il caso di particolare interesse delle 3-varietà iperboliche e di alcuni risultati che descrivono come la geometria della varietà e la norma di Thurston sono legate.
+- nome: "Nicoletta Tardini"
+  provenienza: Università di Parma
+  titolo: Kahler o non-Kahler, questo è il problema
+  data: "09 marzo"
+  abstract: Le varietà Kahleriane, introdotte negli anni ’30, rappresentano una classe speciale di varietà differenziabili poiché possiedono una struttura complessa, una struttura metrica e una struttura simplettica che sono compatibili tra loro. Esempi di tali varietà sono le varietà algebriche proiettive. La presenza di quelle tre strutture geometriche su una varietà Kahleriana comporta una serie di risultati molto forti, da cui seguono ostruzioni anche a livello topologico. Risulta quindi naturale indebolire le tre strutture in gioco e/o le loro relazioni\(:\) nasce quindi cos&iacute; la geometria non-Kahleriana. I primi esempi di varietà non Kahleriane risalgono agli anni ’50 ma è negli ultimi 30 anni che questa geometria ha fatto maggiori passi in avanti. Nel corso del seminario introdurr&ograve; le varietà (non-) Kahleriane, di cui vedremo vari esempi, e analizzeremo una serie di ostruzioni (di carattere coomologico) per capire se una varietà è Kahler o non-Kahler.
+- nome: "Francesco Panelli"
+  provenienza: Università degli studi di Firenze
+  titolo: Un approccio metrico alla Teoria delle Rappresentazioni
+  data: "26 febbraio"
+  abstract: Data una rappresentazione ortogonale di un gruppo di Lie compatto \(G\) su uno spazio vettoriale euclideo \(V\) di dimensione finita, lo spazio delle orbite \(V/G\) ha una naturale struttura di spazio metrico che codifica la geometria di \(V\) trasversa alle orbite. In questo seminario siamo interessati a capire quali proprietà della rappresentazione dipendono soltanto dalla struttura metrica dello spazio delle orbite.
+- nome: "Carlo Collari"
+  provenienza: Université de Toulouse
+  titolo: On concordance and related problems
+  data: "19 febbraio"
+  abstract: A knot is a connected compact smooth sub-manifold of \(S^3\) (more in general in a three manifold, but we will be interested only in \(S^3\)). Two knots are <i>concordant</i> if they bound a properly embedded cylinder in \(S^3\times [0,1]\). It turns out that the knots up to concordance form an Abelian group with respect to the connected sum. The study of the concordance group of knots is a central topic in knot theory, and low dimensional topology in general. There are quite some problems related to the study of this group; for instance, computating the slice genus of a knot or understanding if a given knot is concordant to a specific type of knot (e.g. alternating, quasi alternating etc.). Originally, these problems have been tackled with classical invariants (e.g. signatures), or reduced to a more algebraic framework (e.g. the study of the algebraic concordance group). These methods are still in use and provide useful information on the concordance group, however, with the introduction of link homologies new invariants came up. In this seminar, after a general introduction to the concordance group, and to the above mentioned problems, we will talk about a large family of concordance invariants defined from link homologies. In particular, I wish to highlight some features of these invariants, their properties and some of their "faults". Time permitting, I will also spend few words on the generalisation of these invariants to links (which is a part of joint work with Alberto Cavallo).
+- nome: "Davide Spriano"
+  provenienza: ETH, Zurich
+  titolo: Gromov-iperbolicità e generalizzazioni
+  data: "22 gennaio"
+  abstract: La teoria geometrica dei gruppi si occupa, come il nome suggerisce, dello studio dei gruppi tramite un approccio di tipo geometrico. Più precisamente, ad ogni gruppo si associa uno spazio metrico, tipicamente il rivestimento universale del complesso di presentazione, e si cerca di rispondere a domande di tipo algebrico tramite considerazioni di tipo geometrico. Una caratteristica dello spazio associato che presenta conseguenze molto profonde è la cosidetta Gromov-iperbolicità. Nella prima parte di questo seminario forniremo un'introduzione generale sulle tecniche fondamentali della teoria geometrica dei gruppi e sugli spazi Gromov-iperbolici. Nella seconda parte, ci occuperemo di generalizzare il concetto di Gromov-iperbolicità a quello di iperbolicità relativa (anch'esso introdotto da Gromov) e, tempo permettendo, iperbolicità gerarchica (introdotto da Behrstock, Hagen e Sisto).
+- nome: "Ivan Di Liberto"
+  provenienza: Masaryk University, Brno
+  titolo: Una prospettiva geometrica sul lemma di Yoneda
+  data: "18 dicembre"
+  abstract: Il lemma di Yoneda è uno dei risultati più celebrati e fondanti della teoria delle categorie e ciononostante è tipico dei non addetti ai lavori chiedersi quale sia il suo contenuto qualitativo. In questo seminario proveremo a dare una dimostrazione geometrica del lemma di Yoneda che lo riduca ad un fatto estremamente intuitivo di teoria dei fasci. Il contenuto topologico del lemma di Yoneda è incastonato nell’equivalenza fra la categoria di fasci su uno spazio topologico \(Sh(X)\ e la categoria degli spazi étale \(Et(X)\). L’idea geometrica può essere generalizzata a qualunque categoria, precisamente sotto la forma del lemma di Yoneda. De facto questa istanza del lemma di Yoneda non è la sua origine storica che va cercata in algebra omologica. Yoneda osservò che \(L_p(F)(A) = Nat( Ext^p(hom_A), F)\), provando che i funtori derivati dei rappresentabili determinano i derivati sinistri di qualunque funtore.
+- nome: "Andrea di Lorenzo"
+  provenienza: Scuola Normale Superiore, Pisa
+  titolo: Teoria equivariante dell'intersezione e applicazione in teoria dei moduli
+  data: "13 dicembre"
+  abstract: Il problema di contare il numero di punti in cui si intersecano due curve in un piano (proiettivo complesso) può avere una soluzione intuitiva semplice, ma di non facile dimostrazione. La teoria dei gruppi/anelli di Chow fornisce gli strumenti utili a rispondere a domande di questo tipo\(:\) ad ogni varietà liscia si associa un anello di Chow, così da trasformare le questioni geometriche di teoria dell'intersezione in conti algebrici da effettuare in tale anello. Se la varietà liscia di partenza ammette anche un'azione di un gruppo, allora possono essere definiti degli oggetti algebrici più raffinati, chiamati anelli di Chow equivarianti, che incapsulano informazioni legate sia alla teoria dell'intersezione della varietà che all'azione del gruppo. L'obiettivo del seminario è quello di introdurre in maniera rigorosa i gruppi/anelli di Chow, equivarianti e non, e dare alcuni esempi di calcolo di tali anelli in termini di generatori e relazioni. Tempo permettendo, accennerò ad una interpretazione geometrica degli anelli di Chow equivarianti come anelli di Chow di quozienti, e proverò a parlare di come questa interpretazione apra la strada al calcolo di anelli di Chow di oggetti particolarmente interessanti quali, ad esempio, gli stack di moduli di curve.
+- nome: "Alessandro Divina"
+  provenienza: Università degli studi di Pisa
+  titolo: Volume simpliciale e sue varianti
+  data: "29 novembre"
+  abstract: Il volume simpliciale è un invariante omotopico che misura la complessità dei cicli fondamentali in una varietà, introdotto da M. Gromov nei primi anni ottanta. Nonostante la definizione sia puramente topologica, questo invariante è strettamente legato alla geometria della varietà\(:\) per le varietà iperboliche infatti il volume simpliciale è proporzionale al volume Riemanniano. Dopo aver introdotto le definizioni fondamentali, daremo un'idea delle motivazioni alla base della famosa congettura di Gromov che afferma come l'annullamento del volume simpliciale per una varietà asferica chiusa implichi l'annullamento della sua caratteristica di Eulero. Vedremo perciò come il desiderio di risolvere questa congettura abbia portato allo svilupparsi di due importanti varianti del volume simpliciale classico\(:\) il volume simpliciale intero stabile ed il volume simpliciale foliato intero. In particolare, concentrandoci prevalentemente sul caso del volume simpliciale stabile intero, discuteremo una ipotetica strategia dimostrativa che potrebbe portare ad una risposta affermativa alla domanda di Gromov.
+- nome: "Leonardo Ferrari"
+  provenienza: Università degli studi di Pisa
+  titolo: \(AE\) Spaces and Fixed Point Theory
+  data: "22 novembre"
+  abstract: Many topological fixed point theorems can be proven by obtaining continuous extensions of maps (or, in particular, of the identity map). The goal of this seminar, therefore, is to present a few extension theorems and introduce the notion of absolute extensor, and proceed to use these tools in order to obtain some famous fixed point theorems and fixed point spaces.
+- nome: "Stefano Riolo"
+  provenienza: Università degli studi di Pisa
+  titolo: Varietà iperboliche di volume minimale
+  data: "15 novembre"
+  abstract: In topologia della dimensione bassa, la geometria iperbolica si rivela uno strumento di enorme importanza -- si pensi ad esempio alla geometrizzazione di superfici e 3-varietà. In questo spirito, il volume di una varietà iperbolica è un notevole invariante topologico che riguarda, in diversi sensi, la "complessità" della varietà. Dopo un'introduzione basilare alle varietà iperboliche, ci si focalizzerà su quelle di volume minimale in dimensione al più quattro. Si cercherà di rendere la discussione accessibile anche a chi non sa nulla dell'argomento.
+- nome: "Chiara Spagnoli"
+  provenienza: Università degli studi di Pisa
+  titolo: Introduzione alle categorie modello
+  data: "08 novembre"
+  abstract: Spesso in matematica ci troviamo davanti al problema di voler considerare una collezione di oggetti a meno di una certa classe di morfismi. Cosa si può fare se queste mappe non sono isomorfismi? Partendo da esempi concreti, come gli spazi topologici, i complessi di cocatene e gli insiemi simpliciali, scopriremo che il linguaggio delle categorie modello fornisce la giusta chiave per interpretare e risolvere questa tipologia di problemi. Inoltre, dopo aver definito la struttura modello su una categoria qualsiasi, ci chiederemo sotto quali condizioni queste strutture possono essere trasportate da una categoria all’altra.
