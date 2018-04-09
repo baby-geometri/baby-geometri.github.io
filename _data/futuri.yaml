@@ -1,17 +1,3 @@
-- nome: "José Manuel Moreno-Fernández"
-  provenienza: Universidad de Malaga
-  titolo: Infinity structures and higher products in rational homotopy theory
-  data: "9 aprile"
-  luogo: "Aula seminari"
-  ora: "16.30"
-  abstract: The goal of this talk is to understand how \(L\)-infinity structures on the rational homotopy groups of a simply connected space behave with respect to the higher Whitehead products. To do so, I will give a self-contained introduction to the relevant facts of rational homotopy theory, via examples, computations and intuition. If time permits, I will sketch how cohomology algebras over a field, endowed with an \(A\)-infinity algebra structure, behave with respect to the higher Massey products. I will make the talk accessible for attendants with diverse backgrounds and minimal prerequisites, with interests in algebraic topology or homotopy theory broadly understood.
-- nome: "David Méndez"
-  provenienza: Universidad de Malaga
-  titolo: Realising groups as self-homotopy equivalences of \(A_n^2\)-polyhedra
-  data: "10 aprile"
-  luogo: "Aula riunioni"
-  ora: "09.30"
-  abstract: In the fifties, Whitehead introduced a long exact sequence of abelian groups associated to simply connected spaces. He showed that these exact sequences could be used to classify homotopy types of simply-connected 4-dimensional topological spaces. More recently, Benkhalifa made use of these results to algebraically study in this context the group of self-homotopy equivalences of a space (homotopy clases of continuous self-maps of the space that have a homotopy inverse). In this talk we introduce in detail this algebraic framework and show through some simple examples how these results can be used to study the group of self-homotopy equivalences in this context. I aim for this talk to be accessible to a broad audience with different backgrounds.
 - nome: "Erika Pieroni"
   provenienza: Università della Sapienza, Roma
   titolo: Entropia minimale di 3-varietà
