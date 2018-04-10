@@ -4,13 +4,13 @@ main:
   <p class=\"text-faded mb-4\">Università degli Studi di Pisa - Scuola Normale Superiore</p>"
 
 whitepaper:
-  nome: "David Méndez"
-  provenienza: Universidad de Malaga
-  titolo: Realising groups as self-homotopy equivalences of \(A_n^2\)-polyhedra
-  data: "10 aprile"
-  luogo: "Aula riunioni"
-  ora: "09.30"
-  abstract: In the fifties, Whitehead introduced a long exact sequence of abelian groups associated to simply connected spaces. He showed that these exact sequences could be used to classify homotopy types of simply-connected 4-dimensional topological spaces. More recently, Benkhalifa made use of these results to algebraically study in this context the group of self-homotopy equivalences of a space (homotopy clases of continuous self-maps of the space that have a homotopy inverse). In this talk we introduce in detail this algebraic framework and show through some simple examples how these results can be used to study the group of self-homotopy equivalences in this context. I aim for this talk to be accessible to a broad audience with different backgrounds.
+  nome: "Erika Pieroni"
+  provenienza: Università della Sapienza, Roma
+  titolo: Entropia minimale di 3-varietà
+  data: "16 aprile"
+  luogo: "Aula seminari"
+  ora: "16.30"
+  abstract: In questo seminario introdurremo la nozione di entropia minimale di una varietà. Proseguiremo calcolando l’entropia minimale di una qualsiasi 3-varietà orientabile, a partire dal dato della sua scomposizione in primi e della scomposizione JSJ di ogni componente irriducibile; in particolare, dimostreremo che l’entropia minimale è additiva rispetto ad entrambe le scomposizioni. Questo calcolo verrà effettuato tramite la costruzione esplicita di una successione di metriche sulla varietà, che a posteriori dimostreremo essere minimizzante (utilizzando il metodo del baricentro adattato a questo contesto). Questo lavoro è parte della mia tesi di dottorato.
 
 chisiamo:
   title: "Chi siamo"
