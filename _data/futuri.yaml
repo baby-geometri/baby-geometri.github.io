@@ -1,10 +1,3 @@
-- nome: "Erika Pieroni"
-  provenienza: Università La Sapienza, Roma
-  titolo: Entropia minimale di 3-varietà
-  data: "16 aprile"
-  luogo: "Aula seminari"
-  ora: "16.30"
-  abstract: In questo seminario introdurremo la nozione di entropia minimale di una varietà. Proseguiremo calcolando l’entropia minimale di una qualsiasi 3-varietà orientabile, a partire dal dato della sua scomposizione in primi e della scomposizione JSJ di ogni componente irriducibile; in particolare, dimostreremo che l’entropia minimale è additiva rispetto ad entrambe le scomposizioni. Questo calcolo verrà effettuato tramite la costruzione esplicita di una successione di metriche sulla varietà, che a posteriori dimostreremo essere minimizzante (utilizzando il metodo del baricentro adattato a questo contesto). Questo lavoro è parte della mia tesi di dottorato.
 - nome: "Filippo Cerocchi"
   provenienza: Università La Sapienza, Roma
   titolo: Scomposizioni acilindriche\(:\) esempi geometrici e proprietà di crescita

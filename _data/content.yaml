@@ -4,13 +4,13 @@ main:
   <p class=\"text-faded mb-4\">Università degli Studi di Pisa - Scuola Normale Superiore</p>"
 
 whitepaper:
-  nome: "Erika Pieroni"
+  nome: "Filippo Cerocchi"
   provenienza: Università La Sapienza, Roma
-  titolo: Entropia minimale di 3-varietà
-  data: "16 aprile"
+  titolo: Scomposizioni acilindriche\(:\) esempi geometrici e proprietà di crescita
+  data: "17 aprile"
   luogo: "Aula seminari"
-  ora: "16.30"
-  abstract: In questo seminario introdurremo la nozione di entropia minimale di una varietà. Proseguiremo calcolando l’entropia minimale di una qualsiasi 3-varietà orientabile, a partire dal dato della sua scomposizione in primi e della scomposizione JSJ di ogni componente irriducibile; in particolare, dimostreremo che l’entropia minimale è additiva rispetto ad entrambe le scomposizioni. Questo calcolo verrà effettuato tramite la costruzione esplicita di una successione di metriche sulla varietà, che a posteriori dimostreremo essere minimizzante (utilizzando il metodo del baricentro adattato a questo contesto). Questo lavoro è parte della mia tesi di dottorato.
+  ora: "09.30"
+  abstract: Ricorderemo la nozione di scomposizione acilindrica di un gruppo discreto. Forniremo una serie di esempi e di criteri (rilevanti dal punto di vista topologico e geometrico) che garantiscano l'esistenza di tali scomposizioni. Enunceremo e giustificheremo una versione quantitativa del teorema di sotto(semi)gruppo libero e ne spiegheremo la rilevanza ai fini dello studio delle varietà Riemanniane di entropia e diametro limitati.
 
 chisiamo:
   title: "Chi siamo"
