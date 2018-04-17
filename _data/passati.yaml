@@ -1,3 +1,10 @@
+- nome: "Filippo Cerocchi"
+  provenienza: Università La Sapienza, Roma
+  titolo: Scomposizioni acilindriche\(:\) esempi geometrici e proprietà di crescita
+  data: "17 aprile"
+  luogo: "Aula seminari"
+  ora: "09.30"
+  abstract: Ricorderemo la nozione di scomposizione acilindrica di un gruppo discreto. Forniremo una serie di esempi e di criteri (rilevanti dal punto di vista topologico e geometrico) che garantiscano l'esistenza di tali scomposizioni. Enunceremo e giustificheremo una versione quantitativa del teorema di sotto(semi)gruppo libero e ne spiegheremo la rilevanza ai fini dello studio delle varietà Riemanniane di entropia e diametro limitati.
 - nome: "Erika Pieroni"
   provenienza: Università La Sapienza, Roma
   titolo: Entropia minimale di 3-varietà
