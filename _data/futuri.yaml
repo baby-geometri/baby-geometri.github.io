@@ -1,17 +1,10 @@
-- nome: "Filippo Cerocchi"
-  provenienza: Università La Sapienza, Roma
-  titolo: Scomposizioni acilindriche\(:\) esempi geometrici e proprietà di crescita
-  data: "17 aprile"
-  luogo: "Aula seminari"
-  ora: "09.30"
-  abstract: Ricorderemo la nozione di scomposizione acilindrica di un gruppo discreto. Forniremo una serie di esempi e di criteri (rilevanti dal punto di vista topologico e geometrico) che garantiscano l'esistenza di tali scomposizioni. Enunceremo e giustificheremo una versione quantitativa del teorema di sotto(semi)gruppo libero e ne spiegheremo la rilevanza ai fini dello studio delle varietà Riemanniane di entropia e diametro limitati.
 - nome: "Viktória Földvári"
   provenienza: Elte University, Budapest
   titolo: Introduction to Legendrian 2-bridge knots
   data: "26 aprile"
   luogo: "TBA"
   ora: "TBA"
-  abstract: TBA
+  abstract: On an oriented 3-manifold we can define a contact structure, that is, a completely non-integrable plane field in the tangent bundle of the manifold. Regarding such a structure we consider knots that are everywhere tangent to this plane field. After setting up the basic notions, I am giving an introduction to Legendrian knot theory and briefly present my research topic focusing on two-bridge knots.
 - nome: "Alessio Savini"
   provenienza: ETH, ZUrich
   titolo: Rigidity of real hyperbolic lattices\(:\) a "natural" approach
