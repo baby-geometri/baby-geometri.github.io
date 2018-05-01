@@ -1,3 +1,10 @@
+- nome: "Alessio Savini"
+  provenienza: ETH, Zurich
+  titolo: Rigidity of real hyperbolic lattices\(:\) a "natural" approach
+  data: "30 aprile"
+  luogo: "Aula seminari"
+  ora: "16.30"
+  abstract: Rigidity of lattices in semisimple Lie groups has been widely studied so far. One of the most celebrated theorem is Mostow rigidity, which states the following. Assume \(n\) bigger or equal than 3. If two complete hyperbolic \(n\)-manifolds of finite volume have isomorphic fundamental groups then they are isometric. Equivalently their fundamental groups are conjugated in the group of isometries of the hyperbolic \(n\)-space. There are several ways to prove this theorem. We will expose a proof based on the so-called natural maps, introduced by Besson-Courtois-Gallot and will try to explain the role played by the geometric/aritmetic mean inequality in the proof.
 - nome: "Viktória Földvári"
   provenienza: Elte University, Budapest
   titolo: Introduction to Legendrian 2-bridge knots

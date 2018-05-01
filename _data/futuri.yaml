@@ -1,17 +1,10 @@
-- nome: "Alessio Savini"
-  provenienza: ETH, Zurich
-  titolo: Rigidity of real hyperbolic lattices\(:\) a "natural" approach
-  data: "30 aprile"
-  luogo: "Aula seminari"
-  ora: "16.30"
-  abstract: Rigidity of lattices in semisimple Lie groups has been widely studied so far. One of the most celebrated theorem is Mostow rigidity, which states the following. Assume \(n\) bigger or equal than 3. If two complete hyperbolic \(n\)-manifolds of finite volume have isomorphic fundamental groups then they are isometric. Equivalently their fundamental groups are conjugated in the group of isometries of the hyperbolic \(n\)-space. There are several ways to prove this theorem. We will expose a proof based on the so-called natural maps, introduced by Besson-Courtois-Gallot and will try to explain the role played by the geometric/aritmetic mean inequality in the proof.
 - nome: "Gianluca Faraco"
-  provenienza: ---
-  titolo: TBA
+  provenienza: Università di Parma
+  titolo: Be hyperbolic! Be pure!
   data: "TBA"
   luogo: "TBA"
   ora: "TBA"
-  abstract: TBA
+  abstract: In this talk we will talk about the relationship between hyperbolic cone-structures and their holonomy representations. Any hyperbolic structure on a given closed compact and orientable surface \(S\) induces in a very natural way a representation of the fundamental group \(\pi_1S\) in the Lie group \(PSL(2,\mathbb{R})\), which encodes geometric data about the structure. The reverse problem to recover a hyperbolic cone-structure from a given representation is more arduous and longer. Even worse it is not always possible. In the first part of this talk we will consider this problem from a general viewpoint giving examples of representations that not arise as the holonomy of hyperbolic cone-structure. In the second part we focus our attention to a very special class of representations, namely purely hyperbolic representations.
 - nome: "Lorenzo Ruffoni"
   provenienza: ---
   titolo: TBA
