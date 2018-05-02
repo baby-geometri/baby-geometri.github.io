@@ -1,9 +1,9 @@
 - nome: "Gianluca Faraco"
   provenienza: Università di Parma
   titolo: Be hyperbolic! Be pure!
-  data: "TBA"
-  luogo: "TBA"
-  ora: "TBA"
+  data: "07 maggio"
+  luogo: "aula seminari"
+  ora: "16.30"
   abstract: In this talk we will talk about the relationship between hyperbolic cone-structures and their holonomy representations. Any hyperbolic structure on a given closed compact and orientable surface \(S\) induces in a very natural way a representation of the fundamental group \(\pi_1S\) in the Lie group \(PSL(2,\mathbb{R})\), which encodes geometric data about the structure. The reverse problem to recover a hyperbolic cone-structure from a given representation is more arduous and longer. Even worse it is not always possible. In the first part of this talk we will consider this problem from a general viewpoint giving examples of representations that not arise as the holonomy of hyperbolic cone-structure. In the second part we focus our attention to a very special class of representations, namely purely hyperbolic representations.
 - nome: "Lorenzo Ruffoni"
   provenienza: ---
