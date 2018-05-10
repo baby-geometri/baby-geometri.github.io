@@ -4,13 +4,13 @@ main:
   <p class=\"text-faded mb-4\">Università degli Studi di Pisa - Scuola Normale Superiore</p>"
 
 whitepaper:
-  nome: "Gianluca Faraco"
-  provenienza: Università di Parma
-  titolo: Be hyperbolic! Be pure!
-  data: "07 maggio"
+  nome: "Lorenzo Ruffoni"
+  provenienza: Università di Bologna
+  titolo: Complex projective structures and Hilbert's XXI problem
+  data: "14 maggio"
   luogo: "aula seminari"
   ora: "16.30"
-  abstract: In this talk we will talk about the relationship between hyperbolic cone-structures and their holonomy representations. Any hyperbolic structure on a given closed compact and orientable surface S induces in a very natural way a representation of the fundamental group in the Lie group PSL(2,R), which encodes geometric data about the structure. The reverse problem to recover a hyperbolic cone-structure from a given representation is more arduous and longer. Even worse it is not always possible. In the first part of this talk we will consider this problem from a general viewpoint giving examples of representations that not arise as the holonomy of hyperbolic cone-structure. In the second part we focus our attention to a very special class of representations, namely purely hyperbolic representations.
+  abstract: Complex projective structures are geometric structures locally modelled on the geometry of the Riemann sphere with its group of Möbius transformations PSL(2,C). As this space appears as a natural boundary at infinity for the hyperbolic space, a typical feature of these structures is the interplay between complex analysis and hyperbolic geometry, which gives rise to a rich deformation theory. After reviewing some of the main properties of their deformation space, we will discuss how the study of complex projective structures can provide solutions to Hilbert's XXI problem about monodromy groups of certain classes of ODEs on Riemann surfaces.
 
 chisiamo:
   title: "Chi siamo"
