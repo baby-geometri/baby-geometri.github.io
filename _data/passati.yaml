@@ -1,3 +1,10 @@
+- nome: "Lorenzo Ruffoni"
+  provenienza: Università di Bologna
+  titolo: Complex projective structures and Hilbert's XXI problem
+  data: "14 maggio"
+  luogo: "aula seminari"
+  ora: "16.30"
+  abstract: Complex projective structures are geometric structures locally modelled on the geometry of the Riemann sphere with its group of Möbius transformations \(PSL(2,\mathbb{C})\). As this space appears as a natural boundary at infinity for the hyperbolic space, a typical feature of these structures is the interplay between complex analysis and hyperbolic geometry, which gives rise to a rich deformation theory. After reviewing some of the main properties of their deformation space, we will discuss how the study of complex projective structures can provide solutions to Hilbert's XXI problem about monodromy groups of certain classes of ODEs on Riemann surfaces.
 - nome: "Gianluca Faraco"
   provenienza: Università di Parma
   titolo: Be hyperbolic! Be pure!
