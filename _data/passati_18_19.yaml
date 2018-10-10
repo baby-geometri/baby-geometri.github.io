@@ -1,0 +1,12 @@
+- nome: "GIULIO BELLETTI"
+  provenienza: Centro de Giorgi
+  titolo: Dynamics on translation surfaces\(:\) a (very very very) short survey
+  data: "28 maggio"
+  luogo: "aula magna"
+  ora: "16.30"
+  abstract: Translation surfaces are surfaces which come naturally into play both from a dynamical motivation (billiards in polygons) and from a more algebro-geometrical point of view (they are related to the Teichmuller space). We will start with some examples, give some motivations about why one is interested in them and then focus more on the dynamical side. We will give a short survey of some more or less classical result from the very rich literature. Time permitting, we will also relate this to some Diophantine approximation.
+- nome: "BELLETTI GIULIO"
+  provenienza: Università degli studi di Pisa
+  titolo: Introduzione alle categorie modello
+  data: "08 novembre"
+  abstract: Spesso in matematica ci troviamo davanti al problema di voler considerare una collezione di oggetti a meno di una certa classe di morfismi. Cosa si può fare se queste mappe non sono isomorfismi? Partendo da esempi concreti, come gli spazi topologici, i complessi di cocatene e gli insiemi simpliciali, scopriremo che il linguaggio delle categorie modello fornisce la giusta chiave per interpretare e risolvere questa tipologia di problemi. Inoltre, dopo aver definito la struttura modello su una categoria qualsiasi, ci chiederemo sotto quali condizioni queste strutture possono essere trasportate da una categoria all’altra.
