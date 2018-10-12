@@ -5,9 +5,9 @@ main:
 
 whitepaper:
   nome: "Giulio Belletti"
-  provenienza: Centro de Giorgi
-  titolo: Dynamics on translation surfaces\(:\) a (very very very) short survey
-  data: "28 maggio"
+  provenienza: SNS Pisa
+  titolo: Quantum invariants and hyperbolic 3-manifolds
+  data: "25 novembre"
   luogo: "aula magna"
   ora: "16.30"
   abstract: Translation surfaces are surfaces which come naturally into play both from a dynamical motivation (billiards in polygons) and from a more algebro-geometrical point of view (they are related to the Teichmuller space). We will start with some examples, give some motivations about why one is interested in them and then focus more on the dynamical side. We will give a short survey of some more or less classical result from the very rich literature. Time permitting, we will also relate this to some Diophantine approximation.
@@ -47,5 +47,6 @@ participate:
     - point: "BLeeeH"
   phone:  +00 000 000 000
   email:   babygeometri&#8855cs.dm.unipi.it
+  
 footer:
   text: <a href="https://www.google.it/maps/place/Universit%C3%A0+di+Pisa+Dipartimento+di+Matematica/@43.7197064,10.4053485,17z/data=!3m1!4b1!4m5!3m4!1s0x12d591bc9516b873:0x3cd55ad2e1a52d2d!8m2!3d43.7197064!4d10.4075372/">Dove siamo</a>
