@@ -1,21 +1,42 @@
+- nome: "Michele Pernice"
+  provenienza: SNS Pisa
+  titolo: TBA
+  data: "15 novembre"
+  luogo: "TBA"
+  ora: "TBA"
+  abstract: TBA
+- nome: "Marco Moraschini"
+  provenienza: Università di Pisa
+  titolo: TBA
+  data: "22 novembre"
+  luogo: "TBA"
+  ora: "TBA"
+  abstract: TBA
+- nome: "Lorenzo Guerra"
+  provenienza: SNS Pisa
+  titolo: TBA
+  data: "29 novembre"
+  luogo: "TBA"
+  ora: "TBA"
+  abstract: TBA
+- nome: "Antonio Alfieri"
+  provenienza: CEU Budapest
+  titolo: TBA
+  data: "03 dicembre"
+  luogo: "TBA"
+  ora: "TBA"
+  abstract: TBA
+- nome: "Agnese Janigro"
+  provenienza: Università degli Studi di Pavia
+  titolo: TBA
+  data: "13 dicembre"
+  luogo: "TBA"
+  ora: "TBA"
+  abstract: TBA
 - nome: "Giulio Belletti"
   provenienza: SNS Pisa
-  titolo: Quantum invariants and hyperbolic 3-manifolds
-  data: "25 novembre"
-  luogo: "aula magna"
-  ora: "16.30"
-  abstract: Translation surfaces are  which come naturally into play both from a dynamical motivation (billiards in polygons) and from a more algebro-geometrical point of view (they are related to the Teichmuller space). We will start with some examples, give some motivations about why one is interested in them and then focus more on the dynamical side. We will give a short survey of some more or less classical result from the very rich literature. Time permitting, we will also relate this to some Diophantine approximation.
-- nome: "Giulio Giulio"
-  provenienza: SNS Pisa
-  titolo: Quantum invariants and 3-manifolds
-  data: "25 novembre"
-  luogo: "aula magna"
-  ora: "16.30"
-  abstract: Translation surfaces are surfacescome naturally into play both from a dynamical motivation (billiards in polygons) and from a more algebro-geometrical point of view (they are related to the Teichmuller space). We will start with some examples, give some motivations about why one is interested in them and then focus more on the dynamical side. We will give a short survey of some more or less classical result from the very rich literature. Time permitting, we will also relate this to some Diophantine approximation.
-- nome: "Belletti Belletti"
-  provenienza: SNS Pisa
-  titolo: Quantum inv and hyperbolic 3-manifolds
-  data: "25 novembre"
-  luogo: "aula magna"
-  ora: "16.30"
-  abstract: Translation surfaces  surfaces which come naturally into play both from a dynamical motivation (billiards in polygons) and from a more algebro-geometrical point of view (they are related to the Teichmuller space). We will start with some examples, give some motivations about why one is interested in them and then focus more on the dynamical side. We will give a short survey of some more or less classical result from the very rich literature. Time permitting, we will also relate this to some Diophantine approximation.
+  titolo: TBA
+  data: "20 dicembre"
+  luogo: "TBA"
+  ora: "TBA"
+  abstract: TBA
