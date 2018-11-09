@@ -6,11 +6,11 @@ main:
 whitepaper:
   nome: "Michele Pernice"
   provenienza: SNS Pisa
-  titolo: TBA
+  titolo: Introduzione alla teoria delle deformazioni
   data: "15 novembre"
-  luogo: "TBA"
-  ora: "TBA"
-  abstract: TBA
+  luogo: "Aula riunioni"
+  ora: "16.30"
+  abstract: L'obiettivo di questo seminario sarà di introdurre le nozioni basilari di teoria delle deformazioni astratta quali funtori di deformazione, spazio tangente di Schlessinger, famiglie semiuniversali e teorie dell'ostruzione. Inoltre tempo permettendo, se ne vedrà l'applicazione sulla teoria delle deformazione degli schemi affini.
 
 chisiamo:
   title: "Chi siamo"
