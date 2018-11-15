@@ -4,14 +4,14 @@ main:
   <p class=\"text-faded mb-4\">Università degli Studi di Pisa - Scuola Normale Superiore</p>"
 
 whitepaper:
-  nome: "Michele Pernice"
-  provenienza: SNS Pisa
-  titolo: Introduzione alla teoria delle deformazioni
-  data: "15 novembre"
-  luogo: "Aula riunioni"
+  nome: "Marco Moraschini"
+  provenienza: Università di Pisa
+  titolo: Why do we care about multicomplexes?
+  data: "22 novembre"
+  luogo: "Aula seminari"
   ora: "16.30"
-  abstract: L'obiettivo di questo seminario sarà di introdurre le nozioni basilari di teoria delle deformazioni astratta quali funtori di deformazione, spazio tangente di Schlessinger, famiglie semiuniversali e teorie dell'ostruzione. Inoltre tempo permettendo, se ne vedrà l'applicazione sulla teoria delle deformazione degli schemi affini.
-
+  abstract: Il volume simpliciale è un invariante omotopico per varietà compatte introdotto da Gromov nel 1982 nel suo articolo pionieristico "Volume and bounded cohomology". In parole povere, il volume simpliciale misura la complessità di una varietà in termini delle sue catene singolari reali. L'obiettivo di questo seminario è di descrivere l'idea originaria di Gromov su come affrontare lo studio di questo invariante, ossia attraverso la teoria dei multicomplessi (e la più nota coomologia limitata). I multicomplessi sono una struttura simpliciale che generalizza la nozione di complesso simpliciale. Durante il seminario dopo aver richiamato le definizioni di volume simpliciale e coomologia limitata, introdurremo i concetti principali della teoria dei multicomplessi. In seguito, vedremo attraverso alcuni risultati intermedi come questa teoria ci permetta di mettere in risalto lo stretto legame fra  il volume simpliciale (o più precisamente la coomologia limitata) ed il gruppo fondamentale della varietà in questione.Il legame preciso è descritto dal Mapping Theorem di Gromov. Questo seminario si basa su di un lavoro in collaborazione con Roberto Frigerio ed ovviamente sull' articolo originale di Gromov "Volume and bounded cohomology".
+  
 chisiamo:
   title: "Chi siamo"
   text: "<p> I Baby Geometri sono un ciclo di seminari di Geometria e Topologia organizzati dai dottorandi

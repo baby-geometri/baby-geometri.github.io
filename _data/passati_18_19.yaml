@@ -1,7 +1,7 @@
-- nome: "GIULIO BELLETTI"
-  provenienza: Centro de Giorgi
-  titolo: Dynamics on translation surfaces\(:\) a (very very very) short survey
-  data: "28 maggio"
-  luogo: "aula magna"
+- nome: "Michele Pernice"
+  provenienza: SNS Pisa
+  titolo: Introduzione alla teoria delle deformazioni
+  data: "15 novembre"
+  luogo: "Aula riunioni"
   ora: "16.30"
-  abstract: Translation surfaces are surfaces which come naturally into play both from a dynamical motivation (billiards in polygons) and from a more algebro-geometrical point of view (they are related to the Teichmuller space). We will start with some examples, give some motivations about why one is interested in them and then focus more on the dynamical side. We will give a short survey of some more or less classical result from the very rich literature. Time permitting, we will also relate this to some Diophantine approximation.
+  abstract: L'obiettivo di questo seminario sarà di introdurre le nozioni basilari di teoria delle deformazioni astratta quali funtori di deformazione, spazio tangente di Schlessinger, famiglie semiuniversali e teorie dell'ostruzione. Inoltre tempo permettendo, se ne vedrà l'applicazione sulla teoria delle deformazione degli schemi affini.
