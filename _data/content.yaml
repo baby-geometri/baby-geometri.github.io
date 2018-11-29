@@ -4,14 +4,13 @@ main:
   <p class=\"text-faded mb-4\">Università degli Studi di Pisa - Scuola Normale Superiore</p>"
 
 whitepaper:
-  nome: "Lorenzo Guerra"
-  provenienza: SNS Pisa
-  titolo: Alcune osservazioni sulla coomologia di \(DX\) e \(QX\)
-  data: "29 novembre"
-  luogo: "Aula riunioni"
+  nome: "Antonio Alfieri"
+  provenienza: CEU Budapest
+  titolo: The Conway knot is not slice
+  data: "03 dicembre"
+  luogo: "Aula seminari"
   ora: "16.30"
-  abstract: (Prerequisiti - coomologia ed elementi di topologia algebrica, Cup product, teorema di Künneth..)
-     Lo spazio dei lacci di uno spazio topologico X dotato di un punto base è lo spazio ΩX delle mappe da [0,1] a X il cui valore agli estremi è fissato. Uno spazio di lacci di ordine k è il risultato di k applicazioni consecutive del funtore Ω; uno di ordine infinito è uno spazio che, per ogni k, è omotopicamente equivalente a un certo Ω^k (X). Questi oggetti si sono rivelati estremamente importanti negli sviluppi della matematica a partire circa dalla metà del secolo scorso. Per esempio, essi hanno la funzione di “mattoni fondamentali” nella teoria dell’omotopia stabile, una delle teorie della topologia algebrica concettualmente più profonde, che, approssimativamente, studia quei fenomeni topologici che avvengono in dimensione alta indipendentemente dalla dimensione in un certo senso ben preciso. Un altro motivo di interesse per questi spazi è il loro ruolo chiave nello studio degli invarianti di gruppi notevoli, come i gruppi simmetrici (Barrat, Priddy, Quillen), il mapping class group di superfici (Galatius), e i gruppi di automorfismi dei gruppi liberi (Galatius, Vogtmann). Un’altra costruzione interessante in topologia algebrica è data dalle potenze estese D_k(X) di uno spazio topologico. Intuitivamente, D_k(X) è la potenza k-esima di X, sulla quale l’azione del gruppo simmetrico è “resa libera”. Tali spazi hanno assunto un ruolo centrale nello sviluppo moderno della teoria dell’omotopia. Per esempio, sono stati utilizzati per definire le operazione di Steenrod, per calcolare i differenziali nella successione spettrale di Adams, o per dimostrare il teorema di Nishida sugli elementi nilpotenti dell’anello di omotopia stabile, nonché nella costruzione di operazioni per la K-teoria e per il cobordismo. L’obiettivo di questo seminario è descrivere una presentazione relativamente semplice degli anelli di coomologia (a coefficienti in un campo) di D_k(X) e di Q(X), dove Q è un opportuno funtore libero definito nella categoria degli spazi topologici a valori in quella degli spazi di lacci di ordine infinito, frutto di una collaborazione in corso del relatore con P. Salvatore e D. Sinha. Nella prima parte dell’intervento verrà fornita un’introduzione il più possibile autosufficiente all’omologia degli spazi di lacci di ordine infinito e alle operazioni che la governano. Nella seconda parte verranno enunciati e discussi i risultati sopra indicati.
+  abstract: (Gli unici prerequisiti per poter seguire questo seminario sono sapere cos'è un nodo e cos'è una 4-varietà). Recently Lisa Piccirillo showed that the Conway knot is not slice. I will explain this longstanding problem and outline Lisa's proof. I will conclude with some remarks about Freedman-Gompf-Morrison-Walker's attempt of disproof of the smooth four-dimensional Poincaré conjecture.
 
 chisiamo:
   title: "Chi siamo"
