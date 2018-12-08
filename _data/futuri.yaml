@@ -1,17 +1,10 @@
-- nome: "Antonio Alfieri"
-  provenienza: CEU Budapest
-  titolo: The Conway knot is not slice
-  data: "03 dicembre"
-  luogo: "Aula seminari"
-  ora: "16.30"
-  abstract: (Gli unici prerequisiti per poter seguire questo seminario sono sapere cos'è un nodo e cos'è una 4-varietà). Recently Lisa Piccirillo showed that the Conway knot is not slice. I will explain this longstanding problem and outline Lisa's proof. I will conclude with some remarks about Freedman-Gompf-Morrison-Walker's attempt of disproof of the smooth four-dimensional Poincaré conjecture.
 - nome: "Agnese Janigro"
   provenienza: Università degli Studi di Pavia
-  titolo: TBA
+  titolo: Le coordinate di Fenchel-Nielsen sullo spazio di Teichmüller
   data: "13 dicembre"
   luogo: "Aula seminari"
   ora: "16.30"
-  abstract: TBA
+  abstract: (Prerequisiti\(:\) basi di geometria Riemanniana) Data una superficie chiusa orientabile di genere \(g> 1\) è possibile studiare lo spazio delle metriche riemanniane iperboliche su di essa, ossia quelle con curvatura costante pari a \(- 1\). In questo seminario sarà presentato lo spazio di Teichmüller, che è un quoziente naturale dello spazio delle metriche iperboliche e si descriveranno  le coordinate di Fenchel-Nielsen, le quali forniscono un omeomorfismo fra tale spazio e lo spazio euclideo di dimensione \(6g-6\).
 - nome: "Giulio Belletti"
   provenienza: SNS Pisa
   titolo: TBA

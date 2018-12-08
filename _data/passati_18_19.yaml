@@ -1,3 +1,10 @@
+- nome: "Antonio Alfieri"
+  provenienza: CEU Budapest
+  titolo: The Conway knot is not slice
+  data: "03 dicembre"
+  luogo: "Aula seminari"
+  ora: "16.30"
+  abstract: (Gli unici prerequisiti per poter seguire questo seminario sono sapere cos'è un nodo e cos'è una 4-varietà). Recently Lisa Piccirillo showed that the Conway knot is not slice. I will explain this longstanding problem and outline Lisa's proof. I will conclude with some remarks about Freedman-Gompf-Morrison-Walker's attempt of disproof of the smooth four-dimensional Poincaré conjecture.
 - nome: "Lorenzo Guerra"
   provenienza: SNS Pisa
   titolo: Alcune osservazioni sulla coomologia di \(DX\) e \(QX\)
