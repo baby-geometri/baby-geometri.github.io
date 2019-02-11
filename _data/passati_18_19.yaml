@@ -1,3 +1,10 @@
+- nome: "Giulio Belletti"
+  provenienza: SNS Pisa
+  titolo: Quantum invariants of links and manifolds
+  data: "20 dicembre"
+  luogo: "Aula seminari"
+  ora: "16.30"
+  abstract: (Prerequisites\(:\) Differential manifolds and forms, basic algebraic topology) In 1989 Witten used ideas coming from gauge theory to give topological invariants of links and 3-manifolds; however his ideas were not mathematically sound. I will discuss his original approach and define rigorously the colored Jones function, which is the most important invariant in Witten's framework.
 - nome: "Agnese Janigro"
   provenienza: Università degli Studi di Pavia
   titolo: Le coordinate di Fenchel-Nielsen sullo spazio di Teichmüller

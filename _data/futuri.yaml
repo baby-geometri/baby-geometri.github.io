@@ -1,7 +1,21 @@
-- nome: "Giulio Belletti"
+- nome: "Andrea di Lorenzo"
   provenienza: SNS Pisa
-  titolo: Quantum invariants of links and manifolds
-  data: "20 dicembre"
-  luogo: "Aula seminari"
-  ora: "16.30"
-  abstract: (Prerequisites\(:\) Differential manifolds and forms, basic algebraic topology) In 1989 Witten used ideas coming from gauge theory to give topological invariants of links and 3-manifolds; however his ideas were not mathematically sound. I will discuss his original approach and define rigorously the colored Jones function, which is the most important invariant in Witten's framework.
+  titolo: G.I.T. mon amour
+  data: "14 febbraio"
+  luogo: "Aula 2"
+  ora: "14.30"
+  abstract: (Prerequisiti - Algebra commutativa e geometria algebrica di base) Tutti noi amiamo formare quozienti di oggetti geometrici rispetto all'azione di qualche gruppo. In geometria algebrica non sempre questo è possibile, o almeno non in maniera soddisfacente. Nel seminario introdurrò alcune nozioni di teoria geometrica degli invarianti, che mette a disposizione del povero geometra algebrico una serie di strumenti affinché possa trovare un'approssimazione soddisfacente del quoziente oggetto del suo amore.
+- nome: "Gianluca Tasinato"
+  provenienza: SNS Pisa
+  titolo: TBA
+  data: "28 febbraio"
+  luogo: "TBA"
+  ora: "14.30"
+  abstract: TBa
+- nome: "Federico Conti"
+  provenienza: Università di Pisa
+  titolo: TBA
+  data: "7 marzo"
+  luogo: "TBA"
+  ora: "14.30"
+  abstract: TBA
