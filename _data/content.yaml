@@ -4,13 +4,13 @@ main:
   <p class=\"text-faded mb-4\">Università degli Studi di Pisa - Scuola Normale Superiore</p>"
 
 whitepaper:
-  nome: "Andrea di Lorenzo"
+  nome: "Gianluca Tasinato"
   provenienza: SNS Pisa
-  titolo: G.I.T. mon amour
-  data: "14 febbraio"
-  luogo: "Aula 2"
+  titolo: Omologia persistente
+  data: "28 febbraio"
+  luogo: "Aula seminari"
   ora: "14.30"
-  abstract: (Prerequisiti - Algebra commutativa e geometria algebrica di base) Tutti noi amiamo formare quozienti di oggetti geometrici rispetto all'azione di qualche gruppo. In geometria algebrica non sempre questo è possibile, o almeno non in maniera soddisfacente. Nel seminario introdurrò alcune nozioni di teoria geometrica degli invarianti, che mette a disposizione del povero geometra algebrico una serie di strumenti affinché possa trovare un'approssimazione soddisfacente del quoziente oggetto del suo amore.
+  abstract: L’omologia persistente (e più in generale l’analisi dati topologica) è un ottimo strumento per cercare di ricostruire alcune proprietà topologiche globali del fenomeno in esame. In questo seminario, introdurremo le idee fondamentali alla base della teoria per poi esaminarne delle applicazioni.
 
 chisiamo:
   title: "Chi siamo"
