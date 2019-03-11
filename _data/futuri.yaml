@@ -1,17 +1,10 @@
-- nome: "Gianluca Tasinato"
-  provenienza: SNS Pisa
-  titolo: Omologia persistente
-  data: "28 febbraio"
-  luogo: "Aula seminari"
-  ora: "14.30"
-  abstract: L’omologia persistente (e più in generale l’analisi dati topologica) è un ottimo strumento per cercare di ricostruire alcune proprietà topologiche globali del fenomeno in esame. In questo seminario, introdurremo le idee fondamentali alla base della teoria per poi esaminarne delle applicazioni.
 - nome: "Federico Conti"
   provenienza: Università di Pisa
-  titolo: TBA
+  titolo: Classificazione di Enriques delle superfici algebriche
   data: "14 marzo"
-  luogo: "TBA"
+  luogo: "Aula seminari"
   ora: "14.30"
-  abstract: TBA
+  abstract: Fra gli obbiettivi che si pone un geometra algebrico, di sicuro vi è quello di catalogare gli oggetti con cui ha a che fare. Nel caso delle curve algebriche, la classificazione risulta piuttosto semplice (buona parte delle informazioni geometriche sono contenute nel genere della curva). Per quanto riguarda le superfici la situazione si fa più complicata, e quindi più interessante. Scopo del seminario sarà quello di introdurre la classificazione di Enriques delle superfici algebriche con una particolare attenzione alla geografia delle superfici di tipo generale, che rappresentano la classe più ampia e meno conosciuta della classificazione.
 - nome: "Luigi Lunardon"
   provenienza: Imperial College London
   titolo: TBA
