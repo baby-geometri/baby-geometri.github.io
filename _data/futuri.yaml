@@ -7,11 +7,11 @@
   abstract: Fra gli obbiettivi che si pone un geometra algebrico, di sicuro vi è quello di catalogare gli oggetti con cui ha a che fare. Nel caso delle curve algebriche, la classificazione risulta piuttosto semplice (buona parte delle informazioni geometriche sono contenute nel genere della curva). Per quanto riguarda le superfici la situazione si fa più complicata, e quindi più interessante. Scopo del seminario sarà quello di introdurre la classificazione di Enriques delle superfici algebriche con una particolare attenzione alla geografia delle superfici di tipo generale, che rappresentano la classe più ampia e meno conosciuta della classificazione.
 - nome: "Luigi Lunardon"
   provenienza: Imperial College London
-  titolo: TBA
+  titolo: A degenerate reason why trivial is not always good
   data: "21 marzo"
-  luogo: "TBA"
+  luogo: "Aula seminari"
   ora: "14.30"
-  abstract: TBA
+  abstract: (Prerequisiti - Basic Algebraic Geometry, Canonical bundle, blow ups, fibre products, cohomology...) In this talk, we focus on degeneration of low dimensional Calabi-Yau varieties. All the mysterious words in this abstract will be explained. It is not surprising that, while curves are easy to understand and we have some control on degenerations of surfaces, things get wild in dimension three. In particular, we see that a consequence of Kulikov classification is that, for K3 surfaces, trivial monodromy implies good reduction; however, we show that there is no analogous statement for degenerations of a generic Calabi-Yau 3-fold. We recall the classical definition of degeneration and explain how to translate this in the language of algebraic geometry. After this warm-up, we explain what is Kulikov classification of generic fibres of semistable degenerations of K3 surfaces and we show an example of degenerating Calabi-Yau 3-folds with trivial monodromy that does not admit good reduction.
 - nome: "Roberto Pagaria"
   provenienza: SNS Pisa
   titolo: TBA
