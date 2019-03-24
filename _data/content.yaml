@@ -4,13 +4,13 @@ main:
   <p class=\"text-faded mb-4\">Università degli Studi di Pisa - Scuola Normale Superiore</p>"
 
 whitepaper:
-  nome: "Federico Conti"
-  provenienza: Università di Pisa
-  titolo: Classificazione di Enriques delle superfici algebriche
-  data: "14 marzo"
+  nome: "Roberto Pagaria"
+  provenienza: SNS Pisa
+  titolo: Configuration spaces of points on surfaces
+  data: "28 marzo"
   luogo: "Aula seminari"
   ora: "14.30"
-  abstract: Fra gli obbiettivi che si pone un geometra algebrico, di sicuro vi è quello di catalogare gli oggetti con cui ha a che fare. Nel caso delle curve algebriche, la classificazione risulta piuttosto semplice (buona parte delle informazioni geometriche sono contenute nel genere della curva). Per quanto riguarda le superfici la situazione si fa più complicata, e quindi più interessante. Scopo del seminario sarà quello di introdurre la classificazione di Enriques delle superfici algebriche con una particolare attenzione alla geografia delle superfici di tipo generale, che rappresentano la classe più ampia e meno conosciuta della classificazione.
+  abstract: In this talk we will introduce the ordered and unordered configuration spaces of a manifold. Our aim is to give an overview of the main classical results and then we focus on the Betti numbers in the case of surfaces. The main idea behind the aforementioned results is considering all these spaces simultaneously. The natural maps - that consist in adding or removing a point - will be described. Also inclusions between manifolds give remarkable properties. In the second part we will describe the Kriz model for rational homotopy type of configuration spaces. Using that model and some representation theory, we will compute the Betti and Hodge numbers of the unordered configuration spaces of surfaces.
 
 chisiamo:
   title: "Chi siamo"
