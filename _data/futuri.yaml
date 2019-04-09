@@ -1,7 +1,14 @@
-- nome: "Roberto Pagaria"
-  provenienza: SNS Pisa
-  titolo: Configuration spaces of points on surfaces
-  data: "28 marzo"
+- nome: "Riccardo Piovani"
+  provenienza: Università di Pisa
+  titolo: Teoria di Hodge reale, complessa e L^2
+  data: "11 aprile"
   luogo: "Aula seminari"
   ora: "14.30"
-  abstract: In this talk we will introduce the ordered and unordered configuration spaces of a manifold. Our aim is to give an overview of the main classical results and then we focus on the Betti numbers in the case of surfaces. The main idea behind the aforementioned results is considering all these spaces simultaneously. The natural maps - that consist in adding or removing a point - will be described. Also inclusions between manifolds give remarkable properties. In the second part we will describe the Kriz model for rational homotopy type of configuration spaces. Using that model and some representation theory, we will compute the Betti and Hodge numbers of the unordered configuration spaces of surfaces.
+  abstract: Sia \((M,g)\) una varietà Riemanniana compatta e orientabile. Il teorema di decomposizione di Hodge ci fornisce un isomorfismo tra i gruppi di coomologia di de Rham e alcuni spazi di forme differenziali, dette forme armoniche, che appartengono al nucleo di un certo operatore differenziale, detto Laplaciano di Hodge. Questo ci permette di ricavare informazioni topologiche a partire da informazioni analitiche e viceversa. Troviamo ulteriori sviluppi di questa teoria su varietà Hermitiane compatte e varietà Riemanniane complete (non compatte). In questo seminario presenteremo la teoria di Hodge classica su varietà Riemanniane compatte e orientabili, per poi passare alla teoria di Hodge su varietà Hermitiane compatte e alla teoria di Hodge \(L^2\) su varietà Riemanniane complete. Infine, tempo permettendo, daremo qualche cenno di alcuni risultati recenti sulla caratterizzazione di forme \(W^{1,2}\) Bott-Chern armoniche su varietà Hermitiane complete. I principali requisiti necessari per poter apprezzare il seminario sono i concetti di varietà Riemanniana, coomologia di de Rham, integrale di forme differenziali su varietà compatte orientate e teorema di Stokes. In particolare saranno date le definizioni dell'operatore * di Hodge e di tutti gli oggetti di geometria complessa di cui parleremo.
+- nome: "Giacomo Mezzedimi"
+  provenienza: Hannover University
+  titolo: Entropia topologica su superfici complesse
+  data: "15 aprile"
+  luogo: "Aula seminari"
+  ora: "14.30"
+  abstract: (Prerequisiti - corsi di geometria e topologia quali ETA, IstGeo, basi delle varieta' differenziabili (GTD) e topologia di base (Geometria 2)) L'entropia topologica misura il 'disordine' creato da una trasformazione di uno spazio metrico compatto, ed e' in generale molto difficile da calcolare. Nel caso pero' di automorfismi su  varieta' proiettive complesse, un famoso teorema di Gromov e Yomdin permette di calcolare tale quantita' in modo puramente algebrico. Nella prima parte del seminario introdurremo il gruppo degli automorfismi di una superficie proiettiva complessa, e mostreremo come in certi casi possa essere calcolato con strumenti di algebra lineare. Vedremo in seguito come possono essere individuati gli automorfismi piu' 'ordinati' di una superficie, cioe' quelli con entropia nulla. Infine, tempo permettendo, illustreremo qualche risultato recente sull'entropia di automorfismi di superfici K3 ellittiche.

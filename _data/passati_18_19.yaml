@@ -1,3 +1,10 @@
+- nome: "Roberto Pagaria"
+  provenienza: SNS Pisa
+  titolo: Configuration spaces of points on surfaces
+  data: "28 marzo"
+  luogo: "Aula seminari"
+  ora: "14.30"
+  abstract: In this talk we will introduce the ordered and unordered configuration spaces of a manifold. Our aim is to give an overview of the main classical results and then we focus on the Betti numbers in the case of surfaces. The main idea behind the aforementioned results is considering all these spaces simultaneously. The natural maps - that consist in adding or removing a point - will be described. Also inclusions between manifolds give remarkable properties. In the second part we will describe the Kriz model for rational homotopy type of configuration spaces. Using that model and some representation theory, we will compute the Betti and Hodge numbers of the unordered configuration spaces of surfaces.
 - nome: "Luigi Lunardon"
   provenienza: Imperial College London
   titolo: A degenerate reason why trivial is not always good
