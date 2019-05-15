@@ -4,13 +4,13 @@ main:
   <p class=\"text-faded mb-4\">Università degli Studi di Pisa - Scuola Normale Superiore</p>"
 
 whitepaper:
-  nome: "Giacomo Mezzedimi"
-  provenienza: Hannover University
-  titolo: Entropia topologica su superfici complesse
-  data: "15 aprile"
+  nome: "Federico Barbacovi"
+  provenienza: University College London
+  titolo: Derived categories, an introduction
+  data: "16 maggio"
   luogo: "Aula seminari"
   ora: "14.30"
-  abstract: (Prerequisiti - corsi di geometria e topologia quali ETA, IstGeo, basi delle varieta' differenziabili (GTD) e topologia di base (Geometria 2)) L'entropia topologica misura il 'disordine' creato da una trasformazione di uno spazio metrico compatto, ed e' in generale molto difficile da calcolare. Nel caso pero' di automorfismi su  varieta' proiettive complesse, un famoso teorema di Gromov e Yomdin permette di calcolare tale quantita' in modo puramente algebrico. Nella prima parte del seminario introdurremo il gruppo degli automorfismi di una superficie proiettiva complessa, e mostreremo come in certi casi possa essere calcolato con strumenti di algebra lineare. Vedremo in seguito come possono essere individuati gli automorfismi piu' 'ordinati' di una superficie, cioe' quelli con entropia nulla. Infine, tempo permettendo, illustreremo qualche risultato recente sull'entropia di automorfismi di superfici K3 ellittiche.
+  abstract: Derived categories were introduced by Grothendieck and Verdier around 1960, and since then they have been widely used in algebraic geometry. In this talk, I will try to motivate their use and present some of the questions that arise in the world of derived categories. I will begin by presenting two examples that will hopefully convince you that sometimes we need to “go derived”. Then, I’ll define derived categories and move on to questions such as derived equivalence and the study of the group of autoequivalences of a derived category.
 
 chisiamo:
   title: "Chi siamo"

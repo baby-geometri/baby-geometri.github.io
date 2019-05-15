@@ -1,3 +1,10 @@
+- nome: "Giacomo Mezzedimi"
+  provenienza: Hannover University
+  titolo: Entropia topologica su superfici complesse
+  data: "15 aprile"
+  luogo: "Aula seminari"
+  ora: "14.30"
+  abstract: (Prerequisiti - corsi di geometria e topologia quali ETA, IstGeo, basi delle varieta' differenziabili (GTD) e topologia di base (Geometria 2)) L'entropia topologica misura il 'disordine' creato da una trasformazione di uno spazio metrico compatto, ed e' in generale molto difficile da calcolare. Nel caso pero' di automorfismi su  varieta' proiettive complesse, un famoso teorema di Gromov e Yomdin permette di calcolare tale quantita' in modo puramente algebrico. Nella prima parte del seminario introdurremo il gruppo degli automorfismi di una superficie proiettiva complessa, e mostreremo come in certi casi possa essere calcolato con strumenti di algebra lineare. Vedremo in seguito come possono essere individuati gli automorfismi piu' 'ordinati' di una superficie, cioe' quelli con entropia nulla. Infine, tempo permettendo, illustreremo qualche risultato recente sull'entropia di automorfismi di superfici K3 ellittiche.
 - nome: "Riccardo Piovani"
   provenienza: Università di Pisa
   titolo: Teoria di Hodge reale, complessa e L^2
