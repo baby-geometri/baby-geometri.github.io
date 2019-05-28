@@ -1,3 +1,10 @@
+- nome: "Marco Barberis"
+  provenienza: University of Warwick
+  titolo: Il complesso delle curve e la Metacongettura di Ivanov
+  data: "23 maggio"
+  luogo: "Aula seminari"
+  ora: "14.30"
+  abstract:   Nello studio delle superfici, ed in particolare dei loro omeomorfismi, ha assunto un ruolo centrale, a partire dalla sua introduzione nel 1978, il complesso delle curve. Questo complesso simpliciale racchiude al suo interno una piccola aliquota delle informazioni sulle curve della superficie ed è quindi utile per studiarne la topologia. Un aspetto sorprendente è che le "poche" informazioni racchiuse dal complesso siano in realtà sufficienti a donargli una struttura rigida, ovvero a far sì che i suoi automorfismi siano tutti e soli quelli originati dalla topologia della superficie. È stato congetturato da Ivanov che questa rigidità sia propria di quasi tutti gli oggetti che possiamo costruire a partire da una superficie, a patto che la loro struttura sia sufficientemente ricca. Nel corso del seminario definiremo il complesso delle curve e daremo alcuni esempi, poi tratteremo la sua rigidità ed infine proveremo ad esplorare altre costruzioni legate alle superfici, mettendo in luce alcuni risultati che suggeriscono come la Metacongettura di Ivanov, benché sia un enunciato decisamente più filosofico che matematico, possa essere "vera" e gettare luce sul comportamento di molti oggetti di natura geometrica.
 - nome: "Federico Barbacovi"
   provenienza: University College London
   titolo: Derived categories, an introduction
