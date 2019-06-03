@@ -1,3 +1,10 @@
+- nome: "Guglielmo Nocera"
+  provenienza: Scuola Normale Superiore
+  titolo: Che cos'è una infinito-categoria
+  data: "30 maggio"
+  luogo: "Aula seminari"
+  ora: "14.30"
+  abstract: (Prerequisiti - familiarità con la nozione di categoria e di spazio topologico, definizione di omotopia) An infinity category is a generalization of the notion of a category. This concept was introduced by Boardman and Vogt (1973); later, André Joyal has much advanced the study of infinity-categories showing that most of the usual basic category theory have their analogues for infinity-categories. Infinity-categories are certain simplicial sets. Like ordinary categories, they contain objects (the 0-simplices of the simplicial set) and morphisms between these objects (1-simplices). But unlike categories, the composition of two morphisms need not be uniquely defined. All the morphisms that can serve as composition of two given morphisms are related to each other by higher order invertible morphisms (2-simplices thought of as homotopies). These higher order morphisms can also be composed, but again the composition is well-defined only up to still higher order invertible morphisms, etc. In this talk we will present the basic notions to understand the definition of these objects.
 - nome: "Marco Barberis"
   provenienza: University of Warwick
   titolo: Il complesso delle curve e la Metacongettura di Ivanov

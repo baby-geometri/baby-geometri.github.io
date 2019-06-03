@@ -1,7 +1,7 @@
-- nome: "Guglielmo Nocera"
-  provenienza: Scuola Normale Superiore
-  titolo: Che cos'è una infinito-categoria
-  data: "30 maggio"
+- nome: "Ivan Di Liberti"
+  provenienza: Masaryk University
+  titolo: Variazioni sul concetto di qua
+  data: "6 giugno"
   luogo: "Aula seminari"
   ora: "14.30"
-  abstract: (Prerequisiti - familiarità con la nozione di categoria e di spazio topologico, definizione di omotopia) An infinity category is a generalization of the notion of a category. This concept was introduced by Boardman and Vogt (1973); later, André Joyal has much advanced the study of infinity-categories showing that most of the usual basic category theory have their analogues for infinity-categories. Infinity-categories are certain simplicial sets. Like ordinary categories, they contain objects (the 0-simplices of the simplicial set) and morphisms between these objects (1-simplices). But unlike categories, the composition of two morphisms need not be uniquely defined. All the morphisms that can serve as composition of two given morphisms are related to each other by higher order invertible morphisms (2-simplices thought of as homotopies). These higher order morphisms can also be composed, but again the composition is well-defined only up to still higher order invertible morphisms, etc. In this talk we will present the basic notions to understand the definition of these objects.
+  abstract:  Il talk è pensato per gli studenti del secondo anno e da un punto di vista tecnico è una introduzione alla forma più generale della dualità di Stone. Useremo la dimostrazione di questo teorema come pretesto per ripercorrere i tratti salienti della definizione di spazio topologico e fornire un framework alternativo nel quale fare geometria.
