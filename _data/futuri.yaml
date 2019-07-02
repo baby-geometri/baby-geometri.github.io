@@ -1,3 +1,31 @@
+- nome: "Giacomo Mezzedimi"
+  provenienza: Hannover University
+  titolo: Entropia topologica su superfici complesse
+  data: "15 aprile"
+  luogo: "Aula seminari"
+  ora: "14.30"
+  abstract: (Prerequisiti - corsi di geometria e topologia quali ETA, IstGeo, basi delle varieta' differenziabili (GTD) e topologia di base (Geometria 2)) L'entropia topologica misura il 'disordine' creato da una trasformazione di uno spazio metrico compatto, ed e' in generale molto difficile da calcolare. Nel caso pero' di automorfismi su  varieta' proiettive complesse, un famoso teorema di Gromov e Yomdin permette di calcolare tale quantita' in modo puramente algebrico. Nella prima parte del seminario introdurremo il gruppo degli automorfismi di una superficie proiettiva complessa, e mostreremo come in certi casi possa essere calcolato con strumenti di algebra lineare. Vedremo in seguito come possono essere individuati gli automorfismi piu' 'ordinati' di una superficie, cioe' quelli con entropia nulla. Infine, tempo permettendo, illustreremo qualche risultato recente sull'entropia di automorfismi di superfici K3 ellittiche.
+- nome: "Federico Barbacovi"
+  provenienza: University College London
+  titolo: Derived categories, an introduction
+  data: "16 maggio"
+  luogo: "Aula seminari"
+  ora: "14.30"
+  abstract: Derived categories were introduced by Grothendieck and Verdier around 1960, and since then they have been widely used in algebraic geometry. In this talk, I will try to motivate their use and present some of the questions that arise in the world of derived categories. I will begin by presenting two examples that will hopefully convince you that sometimes we need to “go derived”. Then, I’ll define derived categories and move on to questions such as derived equivalence and the study of the group of autoequivalences of a derived category.
+- nome: "Marco Barberis"
+  provenienza: University of Warwick
+  titolo: Il complesso delle curve e la Metacongettura di Ivanov
+  data: "23 maggio"
+  luogo: "Aula seminari"
+  ora: "14.30"
+  abstract:   Nello studio delle superfici, ed in particolare dei loro omeomorfismi, ha assunto un ruolo centrale, a partire dalla sua introduzione nel 1978, il complesso delle curve. Questo complesso simpliciale racchiude al suo interno una piccola aliquota delle informazioni sulle curve della superficie ed è quindi utile per studiarne la topologia. Un aspetto sorprendente è che le "poche" informazioni racchiuse dal complesso siano in realtà sufficienti a donargli una struttura rigida, ovvero a far sì che i suoi automorfismi siano tutti e soli quelli originati dalla topologia della superficie. È stato congetturato da Ivanov che questa rigidità sia propria di quasi tutti gli oggetti che possiamo costruire a partire da una superficie, a patto che la loro struttura sia sufficientemente ricca. Nel corso del seminario definiremo il complesso delle curve e daremo alcuni esempi, poi tratteremo la sua rigidità ed infine proveremo ad esplorare altre costruzioni legate alle superfici, mettendo in luce alcuni risultati che suggeriscono come la Metacongettura di Ivanov, benché sia un enunciato decisamente più filosofico che matematico, possa essere "vera" e gettare luce sul comportamento di molti oggetti di natura geometrica.
+- nome: "Guglielmo Nocera"
+  provenienza: Scuola Normale Superiore
+  titolo: Che cos'è una infinito-categoria
+  data: "30 maggio"
+  luogo: "Aula seminari"
+  ora: "14.30"
+  abstract: (Prerequisiti - familiarità con la nozione di categoria e di spazio topologico, definizione di omotopia) An infinity category is a generalization of the notion of a category. This concept was introduced by Boardman and Vogt (1973); later, André Joyal has much advanced the study of infinity-categories showing that most of the usual basic category theory have their analogues for infinity-categories. Infinity-categories are certain simplicial sets. Like ordinary categories, they contain objects (the 0-simplices of the simplicial set) and morphisms between these objects (1-simplices). But unlike categories, the composition of two morphisms need not be uniquely defined. All the morphisms that can serve as composition of two given morphisms are related to each other by higher order invertible morphisms (2-simplices thought of as homotopies). These higher order morphisms can also be composed, but again the composition is well-defined only up to still higher order invertible morphisms, etc. In this talk we will present the basic notions to understand the definition of these objects.
 - nome: "Ivan Di Liberti"
   provenienza: Masaryk University
   titolo: Variazioni sul concetto di qua

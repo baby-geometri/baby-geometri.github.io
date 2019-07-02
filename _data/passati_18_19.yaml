@@ -1,3 +1,10 @@
+- nome: "Ivan Di Liberti"
+  provenienza: Masaryk University
+  titolo: Variazioni sul concetto di qua
+  data: "6 giugno"
+  luogo: "Aula seminari"
+  ora: "14.30"
+  abstract:  Il talk è pensato per gli studenti del secondo anno e da un punto di vista tecnico è una introduzione alla forma più generale della dualità di Stone. Useremo la dimostrazione di questo teorema come pretesto per ripercorrere i tratti salienti della definizione di spazio topologico e fornire un framework alternativo nel quale fare geometria.
 - nome: "Guglielmo Nocera"
   provenienza: Scuola Normale Superiore
   titolo: Che cos'è una infinito-categoria
